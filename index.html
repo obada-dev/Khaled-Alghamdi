@@ -399,6 +399,32 @@ footer span.hl2{color:var(--purple)}
 .course-icon i{width:16px;height:16px}
 .course-name{font-size:.8rem;font-weight:600;color:var(--text2);line-height:1.35}
 .course-provider{font-size:.67rem;color:var(--text4);margin-top:.12rem}
+
+/* AMBASSADOR SECTION */
+#ambassador{position:relative;padding:0;background:linear-gradient(180deg,#050510 0%,#02020f 100%);overflow:hidden;border-bottom:1px solid rgba(255,180,0,.1)}
+.amb-inner{display:grid;grid-template-columns:1fr 1.6fr;min-height:320px;position:relative;z-index:2}
+.amb-img-col{position:relative;overflow:hidden;min-height:260px}
+.amb-img-col img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:brightness(.85);transition:transform .5s}
+.amb-img-col:hover img{transform:scale(1.04)}
+.amb-img-overlay{position:absolute;inset:0;background:linear-gradient(90deg,transparent 55%,#02020f 100%),linear-gradient(180deg,rgba(0,0,0,.2) 0%,transparent 40%)}
+.amb-img-badge{position:absolute;top:1.25rem;left:1.25rem;display:flex;gap:.5rem;flex-wrap:wrap}
+.amb-body{padding:2.5rem 2.5rem 2.5rem 2rem;display:flex;flex-direction:column;justify-content:center;gap:1rem;background:linear-gradient(90deg,#02020f 0%,rgba(2,2,15,.95) 100%)}
+.amb-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#f0b800;display:flex;align-items:center;gap:.5rem}
+.amb-eyebrow::before{content:'';display:inline-block;width:1.8rem;height:1px;background:#f0b800}
+.amb-title{font-size:clamp(1.1rem,2.5vw,1.5rem);font-weight:900;color:#fff;line-height:1.25}
+.amb-subtitle{font-size:.78rem;font-weight:600;color:#f0b800;opacity:.85}
+.amb-desc{font-size:.83rem;color:var(--text3);line-height:1.75;max-width:50rem}
+.amb-desc strong{color:#fff}
+.amb-presence-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.25rem}
+.amb-pill{font-size:.68rem;font-weight:600;padding:.32rem .8rem;border-radius:.45rem;background:rgba(240,184,0,.07);border:1px solid rgba(240,184,0,.22);color:#f0b800}
+@media(max-width:800px){.amb-inner{grid-template-columns:1fr}.amb-img-col{min-height:220px}.amb-img-overlay{background:linear-gradient(180deg,transparent 40%,#02020f 100%)}.amb-body{padding:1.75rem 1.25rem}}
+
+/* PROJECT LIVE BUTTON */
+.proj-actions{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:.25rem}
+.proj-live-btn{display:inline-flex;align-items:center;gap:.45rem;padding:.55rem 1.1rem;border-radius:.55rem;font-size:.75rem;font-weight:700;color:var(--cyan);background:rgba(0,240,255,.07);border:1px solid rgba(0,240,255,.28);cursor:pointer;text-decoration:none;transition:all .25s}
+.proj-live-btn:hover{background:rgba(0,240,255,.14);border-color:rgba(0,240,255,.7);transform:translateY(-2px);box-shadow:0 0 18px rgba(0,240,255,.2)}
+.proj-pass-note{font-size:.68rem;color:var(--text4);display:flex;align-items:center;gap:.3rem}
+.proj-pass-note i{width:11px;height:11px;color:var(--text4)}
 </style>
 </head>
 <body>
@@ -464,6 +490,45 @@ footer span.hl2{color:var(--purple)}
           This portfolio is a humble reflection of that inspiration, prepared with the sincere hope of contributing
           to the remarkable work happening at <strong>Albawani's IT Business Section</strong>."
         </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMBASSADOR -->
+<section id="ambassador">
+  <div class="amb-inner reveal">
+    <div class="amb-img-col">
+      <img src="img/mmthl.jpeg" alt="Official Representative — Tabuk University" loading="lazy">
+      <div class="amb-img-overlay"></div>
+      <div class="amb-img-badge">
+        <span style="font-size:.65rem;font-weight:800;padding:.32rem .85rem;border-radius:999px;background:rgba(240,184,0,.15);border:1px solid rgba(240,184,0,.45);color:#f0b800;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(6px)">
+          Official Representative
+        </span>
+        <span style="font-size:.65rem;font-weight:800;padding:.32rem .85rem;border-radius:999px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.15);color:#fff;backdrop-filter:blur(6px)">
+          Tabuk University
+        </span>
+      </div>
+    </div>
+    <div class="amb-body">
+      <div class="amb-eyebrow">
+        <i data-lucide="award" style="width:13px;height:13px;color:#f0b800"></i>
+        Ambassador & Official Representative
+      </div>
+      <div class="amb-title">University Representative at High-Level<br>Governmental &amp; Academic Event</div>
+      <div class="amb-subtitle">Endorsed by University Leadership · Tabuk Region</div>
+      <p class="amb-desc">
+        Honored to be selected as the <strong>official representative of Tabuk University</strong> at a prestigious
+        regional event attended by the <strong>Deputy Governor of the Tabuk Region</strong>, the <strong>Dean of the
+        College, Dr. Omar Al-Balawi</strong>, and the <strong>Vice Dean, Dr. Saleh</strong>. Being nominated for this
+        role reflects the university leadership's high level of trust in my academic excellence, communication skills,
+        and professional presence to represent the institution at the highest governmental levels.
+      </p>
+      <div class="amb-presence-row">
+        <span class="amb-pill">Deputy Governor of Tabuk</span>
+        <span class="amb-pill">Dr. Omar Al-Balawi — Dean</span>
+        <span class="amb-pill">Dr. Saleh — Vice Dean</span>
+        <span class="amb-pill">Regional Exhibition</span>
       </div>
     </div>
   </div>
@@ -1260,6 +1325,44 @@ footer span.hl2{color:var(--purple)}
             <span class="tag">RGB LED</span>
             <span class="tag">Buzzer</span>
             <span class="tag tag-blue">C++</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="glass proj-card reveal reveal-delay-2" style="border-color:rgba(0,102,255,.22);grid-column:1/-1">
+        <div class="proj-img-frame" style="max-height:320px" onclick="openLightbox('img/dash.png','HR Exam Simulation Portal — Dashboard')">
+          <img src="img/dash.png" alt="HR Exam Simulation Portal Dashboard" loading="lazy" style="object-fit:cover;max-height:320px">
+          <div class="proj-zoom"><i data-lucide="zoom-in" style="width:18px;height:18px"></i> Expand Dashboard</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-num" style="color:var(--blue)">Project 03 · Full-Stack Web Application · Official Adoption</div>
+          <div class="proj-title">Official HR Exam Simulation Portal &amp; Dashboard</div>
+          <p class="proj-desc">
+            Designed and developed a comprehensive, web-based examination simulator equipped with an advanced administrative dashboard.
+            Engineered specifically to train and prepare students for official <strong style="color:#fff">Human Resources (HR) certification exams</strong>.
+            Features a fully automated testing environment with <strong style="color:#fff">real-time word and line tracking</strong>,
+            <strong style="color:#fff">automated grading and correction algorithms</strong>, and secure student record management.
+            Due to its high efficiency, accuracy, and robust architecture, the system was <strong style="color:var(--cyan)">officially adopted and
+            accredited by the University of Tabuk</strong> — reflecting production-grade quality and institutional confidence in the solution.
+          </p>
+          <div class="proj-tags" style="margin-bottom:.85rem">
+            <span class="tag tag-blue"><i data-lucide="globe" style="width:10px;height:10px"></i>Full-Stack Web</span>
+            <span class="tag tag-blue">Admin Dashboard</span>
+            <span class="tag">Auto Grading</span>
+            <span class="tag">Real-Time Tracking</span>
+            <span class="tag tag-purple">University Accredited</span>
+            <span class="tag">Student Records</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://tabukexnes.netlify.app/admin" target="_blank" rel="noopener" class="proj-live-btn">
+              <i data-lucide="external-link" style="width:14px;height:14px"></i>
+              View Live Portal
+            </a>
+            <span class="proj-pass-note">
+              <i data-lucide="lock"></i>
+              Demo Access — Password: <strong style="color:var(--text2);margin-left:.25rem">1122</strong>
+            </span>
           </div>
         </div>
       </div>
