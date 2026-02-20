@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Khaled Alghamdi — Computer Engineer | IoT, AI & Cybersecurity</title>
+<meta name="description" content="Khaled Alghamdi — Computer Engineering Graduate, IoT, AI & Cybersecurity Specialist. Portfolio prepared for Albawani IT Business Section." />
+<meta name="theme-color" content="#050510" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+:root{--cyan:#00f0ff;--purple:#b000ff;--blue:#0066ff;--bg:#050510;--bg2:#040410;--card:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.08);--text:#ffffff;--text2:#d1d5db;--text3:#9ca3af;--text4:#6b7280;--r:1rem}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--cyan)44,var(--purple)44);border-radius:3px}
+::selection{background:rgba(0,240,255,0.25);color:#fff}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+.container{max-width:1280px;margin:0 auto;padding:0 1.25rem}
+
+/* SCROLLBAR */
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--cyan)99,var(--purple)99)}
+
+/* GLASS */
+.glass{background:var(--card);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:1rem}
+.glass-hover{transition:border-color .4s,box-shadow .4s}
+.glass-hover:hover{border-color:rgba(0,240,255,.35)!important;box-shadow:0 0 30px rgba(0,240,255,.1),0 8px 32px rgba(0,0,0,.5)!important}
+
+/* GLOW TEXT */
+.glow-cyan{color:var(--cyan);text-shadow:0 0 20px var(--cyan),0 0 40px rgba(0,240,255,.4)}
+.glow-purple{color:var(--purple);text-shadow:0 0 20px var(--purple),0 0 40px rgba(176,0,255,.4)}
+.gradient-text{background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 20px rgba(0,240,255,.4))}
+
+/* BADGE */
+.badge{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .85rem;border-radius:999px;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.badge-cyan{background:rgba(0,240,255,.1);border:1px solid rgba(0,240,255,.3);color:var(--cyan)}
+.badge-purple{background:rgba(176,0,255,.1);border:1px solid rgba(176,0,255,.3);color:var(--purple)}
+
+/* TECH TAG */
+.tag{display:inline-flex;align-items:center;gap:.3rem;padding:.3rem .7rem;border-radius:.5rem;font-size:.7rem;font-weight:600;background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.2);color:var(--cyan);transition:transform .2s}
+.tag:hover{transform:translateY(-2px) scale(1.04)}
+.tag-purple{background:rgba(176,0,255,.08);border-color:rgba(176,0,255,.2);color:var(--purple)}
+.tag-blue{background:rgba(0,102,255,.08);border-color:rgba(0,102,255,.2);color:var(--blue)}
+
+/* GRID BG */
+.grid-bg{background-image:linear-gradient(rgba(0,240,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.025) 1px,transparent 1px);background-size:60px 60px}
+
+/* BUTTONS */
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:.75rem;font-weight:700;font-size:.9rem;color:#000;background:linear-gradient(135deg,var(--cyan),#00b8cc);box-shadow:0 0 25px rgba(0,240,255,.45),0 4px 20px rgba(0,0,0,.3);border:none;cursor:pointer;transition:transform .25s,box-shadow .25s}
+.btn-primary:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 0 40px rgba(0,240,255,.6),0 8px 30px rgba(0,0,0,.4)}
+.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:.75rem;font-weight:700;font-size:.9rem;color:#fff;background:rgba(255,255,255,.05);border:1px solid rgba(176,0,255,.45);cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s}
+.btn-secondary:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 0 25px rgba(176,0,255,.3);border-color:rgba(176,0,255,.8)}
+
+/* SECTION HEADING */
+.section-head{text-align:center;margin-bottom:4rem}
+.section-head h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:1rem}
+.section-head p{color:var(--text3);font-size:1rem;max-width:38rem;margin:0 auto}
+.section-divider{height:1px;max-width:18rem;margin:.75rem auto 0;background:linear-gradient(90deg,transparent,var(--cyan),var(--purple),transparent)}
+
+/* NAVBAR */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+#navbar.scrolled{background:rgba(5,5,16,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,240,255,.1)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 1.25rem;display:flex;align-items:center;justify-content:space-between;height:4rem}
+.nav-logo{display:flex;align-items:center;gap:.6rem}
+.nav-logo-icon{width:2rem;height:2rem;border-radius:.5rem;background:linear-gradient(135deg,var(--cyan),var(--purple));display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.75rem;color:#000;box-shadow:0 0 15px rgba(0,240,255,.4)}
+.nav-logo-text{font-weight:700;font-size:.95rem;color:#fff}
+.nav-links{display:flex;align-items:center;gap:.25rem}
+.nav-link{padding:.45rem 1rem;border-radius:.5rem;font-size:.85rem;font-weight:500;color:var(--text3);transition:color .25s,background .25s}
+.nav-link:hover{color:var(--cyan);background:rgba(0,240,255,.08)}
+.nav-cta{display:flex;align-items:center;gap:.4rem;padding:.45rem 1.25rem;border-radius:.65rem;font-size:.82rem;font-weight:700;color:var(--cyan);background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.3);transition:box-shadow .25s}
+.nav-cta:hover{box-shadow:0 0 20px rgba(0,240,255,.3)}
+.nav-menu-btn{display:none;padding:.5rem;border-radius:.5rem;background:transparent;border:none;color:var(--text3);cursor:pointer}
+.nav-mobile{display:none;flex-direction:column;gap:.25rem;padding:.75rem 1.25rem;background:rgba(5,5,16,.98);border-bottom:1px solid rgba(0,240,255,.1)}
+.nav-mobile .nav-link{padding:.7rem 1rem}
+
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#050510 0%,#0a0118 50%,#050510 100%)}
+.hero-radial{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 60%,rgba(176,0,255,.06) 0%,transparent 65%)}
+.hero-canvas{position:absolute;inset:0;pointer-events:none}
+.scan-line{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,240,255,.35),rgba(176,0,255,.25),transparent);box-shadow:0 0 8px rgba(0,240,255,.3);pointer-events:none;animation:scan 8s linear infinite}
+@keyframes scan{0%{top:0}100%{top:100%}}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 1.25rem;max-width:60rem;margin:0 auto}
+.hero-pill{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem 1.25rem;border-radius:999px;background:linear-gradient(135deg,rgba(0,240,255,.1),rgba(176,0,255,.1));border:1px solid rgba(0,240,255,.3);color:var(--cyan);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2rem;box-shadow:0 0 20px rgba(0,240,255,.15);animation:fadeUp .7s ease both}
+.hero-pill .dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--cyan);box-shadow:0 0 8px var(--cyan);animation:pulse-dot 1.5s ease infinite}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.7)}}
+.hero-h1{font-size:clamp(2.8rem,8vw,6rem);font-weight:900;line-height:1.0;margin-bottom:.75rem;color:#fff;animation:fadeUp .8s .1s ease both}
+.hero-typewriter{font-size:clamp(1.1rem,3vw,1.7rem);font-weight:600;color:var(--text2);height:2.5rem;display:flex;align-items:center;justify-content:center;margin-bottom:.75rem;animation:fadeUp .8s .2s ease both}
+.typewriter-text{color:var(--cyan)}
+.typewriter-cursor{color:var(--cyan);animation:blink .6s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.hero-sub{color:var(--text3);font-size:clamp(.9rem,2vw,1.05rem);max-width:36rem;margin:0 auto 2.5rem;line-height:1.7;animation:fadeUp .8s .3s ease both}
+.hero-btns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:3rem;animation:fadeUp .8s .4s ease both}
+.hero-badge{display:inline-flex;align-items:center;gap:.65rem;padding:.7rem 1.4rem;border-radius:1rem;background:linear-gradient(135deg,rgba(176,0,255,.1),rgba(0,240,255,.08));border:1px solid rgba(176,0,255,.4);box-shadow:0 0 30px rgba(176,0,255,.15),0 0 60px rgba(176,0,255,.06);animation:fadeUp .8s .55s ease both}
+.hero-badge span{font-size:.82rem;color:var(--text2)}
+.hero-badge strong{color:var(--purple)}
+.hero-stats{display:flex;align-items:center;justify-content:center;gap:2rem;margin-top:2.5rem;animation:fadeUp .8s .7s ease both;flex-wrap:wrap}
+.hero-stat{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--text4)}
+.hero-stat i{color:var(--cyan);width:14px;height:14px}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.4rem;animation:bounce 2s ease infinite}
+.hero-scroll span{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text4)}
+.hero-scroll i{color:var(--text4)}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ABOUT */
+#about{padding:7rem 0;background:var(--bg);position:relative;overflow:hidden}
+.about-bg{position:absolute;right:0;top:0;width:28rem;height:28rem;border-radius:50%;background:radial-gradient(circle,rgba(176,0,255,.05) 0%,transparent 70%);pointer-events:none}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.about-card{padding:2.5rem}
+.about-card-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.about-avatar{width:3.25rem;height:3.25rem;border-radius:.85rem;background:linear-gradient(135deg,rgba(0,240,255,.15),rgba(176,0,255,.15));border:1px solid rgba(0,240,255,.3);display:flex;align-items:center;justify-content:center}
+.about-avatar i{color:var(--cyan)}
+.about-name{font-weight:700;font-size:1.1rem;color:#fff}
+.about-sub{color:var(--text4);font-size:.78rem;margin-top:.15rem}
+.about-text{color:var(--text2);line-height:1.75;font-size:.93rem;margin-bottom:1rem}
+.about-text span.hl-cyan{color:var(--cyan);font-weight:600}
+.about-text span.hl-purple{color:var(--purple);font-weight:600}
+.about-text span.hl-white{color:#fff;font-weight:600}
+.about-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.25rem}
+.stat-card{padding:1.5rem;text-align:center;border-radius:.85rem}
+.stat-card i{margin-bottom:.6rem}
+.stat-value{font-size:1.8rem;font-weight:900;margin-bottom:.2rem}
+.stat-label{color:var(--text4);font-size:.72rem;font-weight:500}
+.target-card{padding:1.25rem 1.5rem;border-radius:.85rem;background:rgba(176,0,255,.06);border:1px solid rgba(176,0,255,.25);display:flex;gap:1rem;align-items:flex-start}
+.target-icon{width:2.5rem;height:2.5rem;border-radius:.65rem;background:rgba(176,0,255,.15);border:1px solid rgba(176,0,255,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.15rem}
+.target-icon i{color:var(--purple)}
+.target-title{font-weight:700;font-size:.9rem;color:#fff;margin-bottom:.3rem}
+.target-text{font-size:.8rem;color:var(--text3);line-height:1.6}
+
+/* ACADEMIC */
+#academic{padding:7rem 0;background:var(--bg2);position:relative}
+.academic-left-glow{position:absolute;left:0;top:50%;transform:translateY(-50%);width:24rem;height:24rem;border-radius:50%;background:radial-gradient(circle,rgba(0,102,255,.04) 0%,transparent 70%);pointer-events:none}
+.academic-main{display:grid;grid-template-columns:2fr 1fr;gap:2rem;margin-bottom:2.5rem}
+.univ-card{padding:2.5rem;position:relative;overflow:hidden}
+.univ-glow{position:absolute;top:0;right:0;width:10rem;height:10rem;border-radius:50%;background:radial-gradient(circle,rgba(0,240,255,.06) 0%,transparent 70%);transform:translate(30%,-30%);pointer-events:none}
+.univ-header{display:flex;align-items:flex-start;gap:1.25rem;margin-bottom:2rem}
+.univ-icon{width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,rgba(0,240,255,.15),rgba(0,102,255,.15));border:1px solid rgba(0,240,255,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.univ-icon i{color:var(--cyan)}
+.univ-name{font-weight:900;font-size:1.2rem;color:#fff;margin-bottom:.2rem}
+.univ-degree{color:var(--text3);font-size:.82rem;margin-bottom:.4rem}
+.univ-meta{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.univ-meta-item{display:flex;align-items:center;gap:.3rem;font-size:.74rem;color:var(--text4)}
+.univ-meta-item i{width:11px;height:11px}
+.gpa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-bottom:2rem}
+.gpa-cell{padding:1rem;border-radius:.65rem;text-align:center}
+.gpa-cell-label{font-size:.65rem;color:var(--text4);margin-bottom:.35rem}
+.gpa-cell-value{font-weight:900;font-size:.9rem}
+.ieee-card{padding:2rem;display:flex;flex-direction:column;justify-content:space-between;height:100%}
+.ieee-icon{width:3.5rem;height:3.5rem;border-radius:1rem;background:linear-gradient(135deg,rgba(176,0,255,.15),rgba(0,240,255,.15));border:1px solid rgba(176,0,255,.3);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
+.ieee-icon i{color:var(--purple)}
+.ieee-title{font-weight:900;font-size:1.1rem;color:#fff;margin-bottom:.5rem}
+.ieee-text{font-size:.8rem;color:var(--text3);line-height:1.6;margin-bottom:1.5rem;flex:1}
+.ieee-badge-box{padding:.85rem;border-radius:.65rem;background:rgba(176,0,255,.08);border:1px solid rgba(176,0,255,.2)}
+.ieee-badge-label{font-size:.65rem;color:var(--text4);margin-bottom:.2rem}
+.ieee-badge-val{font-weight:700;color:#fff;font-size:.85rem}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.cert-row{display:flex;align-items:center;gap:1rem;padding:1.1rem 1.25rem}
+.cert-icon{width:2.75rem;height:2.75rem;border-radius:.65rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cert-name{font-weight:600;font-size:.85rem;color:#fff;line-height:1.3}
+.cert-org{font-size:.72rem;color:var(--text4);margin-top:.15rem}
+.cert-check{margin-left:auto;flex-shrink:0}
+.cert-check i{color:var(--cyan)}
+
+/* SKILLS */
+#skills{padding:7rem 0;background:var(--bg);position:relative;overflow:hidden}
+.skills-right-glow{position:absolute;right:0;bottom:0;width:22rem;height:22rem;border-radius:50%;background:radial-gradient(circle,rgba(0,240,255,.04) 0%,transparent 70%);pointer-events:none}
+.skills-split{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2rem}
+.skills-card{padding:2.25rem}
+.skills-card-title{display:flex;align-items:center;gap:.65rem;font-weight:700;font-size:1rem;color:#fff;margin-bottom:1.75rem}
+.skills-card-title i{color:var(--cyan)}
+.skill-bar-wrap{margin-bottom:1.25rem}
+.skill-bar-head{display:flex;justify-content:space-between;margin-bottom:.45rem}
+.skill-bar-name{font-size:.82rem;font-weight:500;color:var(--text2)}
+.skill-bar-pct{font-size:.78rem;font-weight:700}
+.skill-track{height:.45rem;border-radius:999px;background:rgba(255,255,255,.07);overflow:hidden}
+.skill-fill{height:100%;border-radius:999px;width:0;transition:width 1.2s cubic-bezier(.22,1,.36,1)}
+.tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.85rem}
+.tech-item{display:flex;flex-direction:column;align-items:center;gap:.65rem;padding:1.1rem;border-radius:.75rem;transition:all .3s;cursor:default}
+.tech-item:hover{transform:translateY(-4px) scale(1.04)}
+.tech-item-icon{width:3rem;height:3rem;border-radius:.75rem;display:flex;align-items:center;justify-content:center}
+.tech-item-icon i{width:22px;height:22px}
+.tech-item span{font-size:.72rem;font-weight:500;color:var(--text2);text-align:center;line-height:1.3}
+.impl-card{padding:2rem;margin-top:2rem}
+.impl-title{display:flex;align-items:center;gap:.65rem;font-weight:700;font-size:1rem;color:#fff;margin-bottom:1.5rem}
+.impl-title i{color:var(--cyan)}
+.impl-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.impl-desc{font-size:.85rem;color:var(--text3);line-height:1.7}
+.impl-tags{display:flex;flex-wrap:wrap;gap:.45rem;align-content:flex-start}
+
+/* ACHIEVEMENTS */
+#achievements{padding:7rem 0;background:var(--bg2);position:relative;overflow:hidden}
+.achievements-center-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(176,0,255,.04) 0%,transparent 70%);pointer-events:none}
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.25rem}
+.ach-card{position:relative;border-radius:1rem;padding:1.5rem;display:flex;flex-direction:column;gap:1rem;transition:all .4s;cursor:default;overflow:hidden}
+.ach-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;border-radius:1rem 1rem 0 0;opacity:0;transition:opacity .4s}
+.ach-card.highlight::before{opacity:1}
+.ach-card:hover{transform:translateY(-6px) scale(1.02)}
+.ach-card-top{display:flex;align-items:flex-start;justify-content:space-between}
+.ach-icon-box{width:3rem;height:3rem;border-radius:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ach-icon-box i{width:22px;height:22px}
+.ach-tag-pill{font-size:.65rem;font-weight:700;padding:.25rem .65rem;border-radius:999px;letter-spacing:.04em}
+.ach-title{font-weight:700;font-size:.88rem;color:#fff;line-height:1.35;margin-bottom:.35rem}
+.ach-desc{font-size:.78rem;color:var(--text3);line-height:1.6}
+
+/* CONTACT */
+#contact{padding:7rem 0;background:var(--bg);position:relative;overflow:hidden}
+.contact-bottom-glow{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60rem;height:30rem;border-radius:50%;background:radial-gradient(circle,rgba(176,0,255,.07) 0%,transparent 70%);pointer-events:none}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:3rem}
+.contact-card{padding:2.25rem;height:100%}
+.contact-card-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.contact-icon{width:3rem;height:3rem;border-radius:.75rem;background:linear-gradient(135deg,rgba(176,0,255,.15),rgba(0,240,255,.15));border:1px solid rgba(176,0,255,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon i{color:var(--purple)}
+.contact-title{font-weight:700;font-size:1.05rem;color:#fff}
+.contact-subtitle{font-size:.74rem;color:var(--text4);margin-top:.15rem}
+.letter-box{border-radius:.85rem;padding:1.5rem;margin-bottom:1.25rem;background:linear-gradient(135deg,rgba(176,0,255,.08),rgba(0,240,255,.05));border:1px solid rgba(176,0,255,.2)}
+.letter-text{font-size:.83rem;color:var(--text3);line-height:1.75}
+.letter-text strong{color:#fff}
+.letter-text .hl{color:var(--cyan);font-weight:600}
+.ready-row{display:flex;align-items:center;gap:.75rem;padding:.85rem 1.1rem;border-radius:.65rem;background:rgba(0,240,255,.06);border:1px solid rgba(0,240,255,.18)}
+.ready-row i{color:var(--cyan);flex-shrink:0}
+.ready-row span{font-size:.83rem;font-weight:500;color:var(--text2)}
+.contact-items{display:flex;flex-direction:column;gap:.85rem}
+.contact-item{display:flex;align-items:center;gap:1rem;padding:1.2rem}
+.ci-icon{width:2.75rem;height:2.75rem;border-radius:.65rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ci-label{font-size:.7rem;color:var(--text4);margin-bottom:.2rem}
+.ci-value{font-size:.85rem;font-weight:500;color:#fff}
+.ci-link{margin-left:auto;flex-shrink:0}
+.ci-link i{color:var(--text4);width:14px;height:14px}
+.albawani-card{padding:1.5rem;text-align:center}
+.albawani-icon-wrap{width:3.5rem;height:3.5rem;border-radius:1rem;background:linear-gradient(135deg,rgba(0,240,255,.15),rgba(176,0,255,.15));border:1px solid rgba(0,240,255,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+.albawani-icon-wrap i{color:var(--cyan)}
+.albawani-name{font-weight:700;font-size:.95rem;color:#fff;margin-bottom:.2rem}
+.albawani-section{font-size:.72rem;color:var(--text4);margin-bottom:.75rem}
+.albawani-note{font-size:.77rem;color:var(--text3);line-height:1.6}
+.cta-box{text-align:center;border-radius:1.5rem;padding:4rem 2rem;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(0,240,255,.05),rgba(176,0,255,.05));border:1px solid rgba(0,240,255,.15)}
+.cta-box-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(176,0,255,.07) 0%,transparent 70%);pointer-events:none}
+.cta-icon{margin:0 auto 1rem;color:var(--cyan)}
+.cta-title{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:900;color:#fff;margin-bottom:.75rem}
+.cta-sub{color:var(--text3);max-width:36rem;margin:0 auto 2rem;font-size:.9rem;line-height:1.7}
+
+/* FOOTER */
+footer{padding:2rem 0;text-align:center;border-top:1px solid rgba(255,255,255,.05);background:var(--bg2)}
+footer p{font-size:.8rem;color:var(--text4);margin-bottom:.35rem}
+footer span.hl{color:var(--cyan)}
+footer span.hl2{color:var(--purple)}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.08s}
+.reveal-delay-2{transition-delay:.16s}
+.reveal-delay-3{transition-delay:.24s}
+.reveal-delay-4{transition-delay:.32s}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .about-grid,.academic-main,.contact-grid,.skills-split,.impl-grid{grid-template-columns:1fr}
+  .tech-grid{grid-template-columns:repeat(4,1fr)}
+  .gpa-grid{grid-template-columns:repeat(3,1fr)}
+  .ieee-card{height:auto}
+}
+@media(max-width:720px){
+  .nav-links,.nav-cta{display:none}
+  .nav-menu-btn{display:flex;align-items:center;justify-content:center}
+  .tech-grid{grid-template-columns:repeat(2,1fr)}
+  .ach-grid{grid-template-columns:1fr}
+  .hero-stats{gap:1.25rem}
+}
+@media(max-width:480px){
+  .gpa-grid{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+}
+/* CERT IMAGE CARDS */
+.certs-visual-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-bottom:1.25rem}
+.cert-img-card{overflow:hidden;padding:0;display:flex;flex-direction:column}
+.cert-img-thumb{position:relative;height:155px;overflow:hidden;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.06);background:#08080f}
+.cert-img-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+.cert-img-thumb:hover img{transform:scale(1.05)}
+.cert-img-overlay{position:absolute;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;gap:.4rem;color:#fff;font-size:.8rem;font-weight:600}
+.cert-img-thumb:hover .cert-img-overlay{opacity:1}
+.cert-img-body{padding:1rem 1.2rem;flex:1;display:flex;flex-direction:column;gap:.3rem}
+.cert-img-title{font-weight:700;font-size:.86rem;color:#fff;line-height:1.3}
+.cert-img-org{font-size:.72rem;color:var(--text4)}
+.cert-img-note{font-size:.75rem;color:var(--text3);line-height:1.5;margin-top:.1rem;flex:1}
+.view-cert-btn{margin-top:.5rem;display:inline-flex;align-items:center;gap:.35rem;padding:.38rem .8rem;border-radius:.45rem;background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.25);color:var(--cyan);font-size:.7rem;font-weight:600;cursor:pointer;transition:all .25s;width:fit-content}
+.view-cert-btn:hover{background:rgba(0,240,255,.18);box-shadow:0 0 12px rgba(0,240,255,.3)}
+/* LIGHTBOX */
+.lightbox-overlay{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.93);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:opacity .35s}
+.lightbox-overlay.open{opacity:1;pointer-events:all}
+.lightbox-inner{position:relative;max-width:90vw}
+.lightbox-img{max-width:100%;max-height:85vh;border-radius:.85rem;border:1px solid rgba(255,255,255,.1);box-shadow:0 0 80px rgba(0,0,0,.9);display:block}
+.lightbox-title{text-align:center;color:var(--text3);font-size:.8rem;margin-top:.75rem}
+.lightbox-close{position:absolute;top:-2.8rem;right:0;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:.5rem;color:#fff;padding:.4rem .8rem;cursor:pointer;font-size:.8rem;font-weight:600;display:flex;align-items:center;gap:.4rem;transition:all .2s}
+.lightbox-close:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.4)}
+/* PROJECTS SECTION */
+#projects{padding:7rem 0;background:var(--bg2);position:relative;overflow:hidden}
+.proj-top-glow{position:absolute;right:0;top:0;width:30rem;height:30rem;border-radius:50%;background:radial-gradient(circle,rgba(0,240,255,.05) 0%,transparent 70%);pointer-events:none}
+.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.proj-card{overflow:hidden;padding:0;display:flex;flex-direction:column}
+.proj-tabs-row{display:flex;gap:.5rem;padding:.65rem .9rem;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(0,0,0,.25)}
+.proj-tab-btn{flex:1;padding:.42rem .5rem;border-radius:.45rem;font-size:.7rem;font-weight:600;cursor:pointer;transition:all .25s;background:transparent;color:var(--text4);border:1px solid transparent;display:flex;align-items:center;justify-content:center;gap:.35rem}
+.proj-tab-btn.active{background:rgba(0,240,255,.1);border-color:rgba(0,240,255,.28);color:var(--cyan)}
+.proj-tab-btn:hover:not(.active){color:var(--text2);background:rgba(255,255,255,.04)}
+.proj-img-frame{height:230px;overflow:hidden;position:relative;cursor:pointer;background:#07070e}
+.proj-img-frame img{width:100%;height:100%;object-fit:contain;transition:transform .4s;padding:.5rem}
+.proj-img-frame:hover img{transform:scale(1.03)}
+.proj-img-frame .proj-zoom{position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;color:#fff;font-size:.8rem;font-weight:600;gap:.4rem}
+.proj-img-frame:hover .proj-zoom{opacity:1}
+.proj-body{padding:1.5rem;flex:1;display:flex;flex-direction:column;gap:.6rem;border-top:1px solid rgba(255,255,255,.05)}
+.proj-num{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.proj-title{font-weight:800;font-size:1.05rem;color:#fff;line-height:1.3}
+.proj-desc{font-size:.81rem;color:var(--text3);line-height:1.65;flex:1}
+.proj-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.2rem}
+@media(max-width:900px){.proj-grid{grid-template-columns:1fr}}
+/* HERO PHOTO */
+.hero-photo{width:110px;height:110px;border-radius:50%;overflow:hidden;margin:0 auto 1.75rem;position:relative;flex-shrink:0;border:3px solid transparent;background:linear-gradient(#050510,#050510) padding-box,linear-gradient(135deg,var(--cyan),var(--purple)) border-box;box-shadow:0 0 30px rgba(0,240,255,.35),0 0 60px rgba(0,240,255,.1);animation:fadeUp .6s ease both}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-photo::after{content:'';position:absolute;inset:-5px;border-radius:50%;border:1px solid rgba(0,240,255,.2);animation:pulse-ring 2.5s ease-out infinite}
+@keyframes pulse-ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.25);opacity:0}}
+/* CV DOWNLOAD BTN */
+.btn-cv{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:.75rem;font-weight:700;font-size:.9rem;color:var(--cyan);background:rgba(0,240,255,.05);border:1px solid rgba(0,240,255,.3);cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s}
+.btn-cv:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 0 25px rgba(0,240,255,.3);border-color:rgba(0,240,255,.8)}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-icon">KA</div>
+      <span class="nav-logo-text">Khaled <span class="glow-cyan">Alghamdi</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#academic" class="nav-link">Academic</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">
+      <i data-lucide="zap" style="width:14px;height:14px"></i> Hire Me
+    </a>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+      <i data-lucide="menu" style="width:20px;height:20px" id="menuIcon"></i>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#hero" class="nav-link" onclick="closeMobile()">Home</a>
+    <a href="#about" class="nav-link" onclick="closeMobile()">About</a>
+    <a href="#academic" class="nav-link" onclick="closeMobile()">Academic</a>
+    <a href="#skills" class="nav-link" onclick="closeMobile()">Skills</a>
+    <a href="#projects" class="nav-link" onclick="closeMobile()">Projects</a>
+    <a href="#achievements" class="nav-link" onclick="closeMobile()">Achievements</a>
+    <a href="#contact" class="nav-link" onclick="closeMobile()">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="grid-bg" style="position:absolute;inset:0;pointer-events:none"></div>
+  <div class="hero-radial"></div>
+  <canvas class="hero-canvas" id="particleCanvas"></canvas>
+  <div class="scan-line"></div>
+  <div class="hero-content">
+    <div class="hero-photo">
+      <img src="img/me.png" alt="Khaled Alghamdi">
+    </div>
+    <div class="hero-pill">
+      <span class="dot"></span>
+      Available for Opportunities &nbsp;·&nbsp; Tabuk, KSA
+    </div>
+    <h1 class="hero-h1">
+      Hello, I'm<br>
+      <span class="gradient-text">Khaled Alghamdi</span>
+    </h1>
+    <div class="hero-typewriter">
+      <span class="typewriter-text" id="typewriterText"></span><span class="typewriter-cursor">|</span>
+    </div>
+    <p class="hero-sub">
+      Transforming real-world challenges into intelligent, scalable IT solutions.
+      Passionate about driving digital transformation and operational efficiency.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">
+        <i data-lucide="rocket" style="width:17px;height:17px"></i>
+        View Projects
+        <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+      </a>
+      <a href="#contact" class="btn-secondary">
+        <i data-lucide="mail" style="width:17px;height:17px"></i>
+        Contact Me
+      </a>
+      <a href="#" onclick="openLightbox('img/CV.png','Khaled Alghamdi — Resume & CV');return false;" class="btn-cv">
+        <i data-lucide="file-text" style="width:17px;height:17px"></i>
+        View CV
+      </a>
+    </div>
+    <div class="hero-badge">
+      <img src="img/albwani.png" alt="Albawani" style="height:24px;width:auto;object-fit:contain;flex-shrink:0">
+      <span>
+        Prepared for &nbsp;<strong>Albawani IT Business Section</strong>&nbsp;
+        — Attn: <strong style="color:#fff">Mr. Modar Sheikh Saeed</strong>
+      </span>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <i data-lucide="shield" style="color:var(--cyan);width:14px;height:14px"></i>
+        Patent Holder
+      </div>
+      <div class="hero-stat">
+        <i data-lucide="trophy" style="color:var(--cyan);width:14px;height:14px"></i>
+        #1 University
+      </div>
+      <div class="hero-stat">
+        <i data-lucide="globe" style="color:var(--cyan);width:14px;height:14px"></i>
+        Top 20 Global
+      </div>
+      <div class="hero-stat">
+        <i data-lucide="code-2" style="color:var(--cyan);width:14px;height:14px"></i>
+        23+ Projects
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <i data-lucide="chevron-down" style="width:18px;height:18px"></i>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-bg"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="badge badge-cyan" style="margin-bottom:1rem">
+        <i data-lucide="sparkles" style="width:11px;height:11px"></i> About Me
+      </div>
+      <h2>Who I <span class="glow-cyan">Am</span></h2>
+      <p>A bridge between engineering depth and business impact</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="glass glass-hover about-card" style="border-color:rgba(0,240,255,.15)">
+          <div class="about-card-header">
+            <div class="about-avatar" style="width:3.5rem;height:3.5rem;padding:0;overflow:hidden;background:transparent;border:2px solid rgba(0,240,255,.45);flex-shrink:0">
+              <img src="img/me.png" alt="Khaled Alghamdi" style="width:100%;height:100%;object-fit:cover;display:block">
+            </div>
+            <div>
+              <div class="about-name">Khaled Alghamdi</div>
+              <div class="about-sub">Computer Engineer · Tabuk University</div>
+            </div>
+          </div>
+          <p class="about-text">My name is Khaled Alghamdi, a Computer Engineering graduate who strongly believes that <span class="hl-cyan">Information Technology is not just about systems and hardware</span>, but a strategic enabler that enhances operational efficiency, improves decision-making, and transforms real-world challenges into intelligent, scalable solutions.</p>
+          <p class="about-text">Throughout my academic and practical journey, I have always aimed to be a <span class="hl-purple">problem solver rather than a task executor</span>. I chose Computer Engineering because it combines engineering depth with technical flexibility, allowing strong integration between programming, systems, networks, and cybersecurity.</p>
+          <p class="about-text">I specialize in <span class="hl-white">Embedded Systems</span> and their integration with IoT and AI. I am driven by the opportunity to demonstrate how <span class="hl-cyan">IT can be a real added value</span> in supporting projects, enabling digital transformation, and becoming a valuable asset to a company with the scale and vision of <span class="hl-white">Albawani</span>.</p>
+          <div class="about-tags">
+            <span class="tag"><i data-lucide="check-circle" style="width:11px;height:11px"></i>Problem Solver</span>
+            <span class="tag"><i data-lucide="check-circle" style="width:11px;height:11px"></i>Strategic Thinker</span>
+            <span class="tag"><i data-lucide="check-circle" style="width:11px;height:11px"></i>Team Player</span>
+            <span class="tag"><i data-lucide="check-circle" style="width:11px;height:11px"></i>Innovation Driven</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="stats-grid">
+          <div class="glass stat-card" style="border-color:rgba(0,240,255,.2)">
+            <i data-lucide="star" style="width:22px;height:22px;color:var(--cyan);display:block;margin:0 auto .6rem"></i>
+            <div class="stat-value glow-cyan">4.74</div>
+            <div class="stat-label">GPA out of 5</div>
+          </div>
+          <div class="glass stat-card" style="border-color:rgba(176,0,255,.2)">
+            <i data-lucide="medal" style="width:22px;height:22px;color:var(--purple);display:block;margin:0 auto .6rem"></i>
+            <div class="stat-value glow-purple">2nd</div>
+            <div class="stat-label">in Batch</div>
+          </div>
+          <div class="glass stat-card" style="border-color:rgba(0,102,255,.2)">
+            <i data-lucide="code-2" style="width:22px;height:22px;color:var(--blue);display:block;margin:0 auto .6rem"></i>
+            <div class="stat-value" style="color:var(--blue);text-shadow:0 0 20px var(--blue)">23+</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div class="glass stat-card" style="border-color:rgba(0,240,255,.2)">
+            <i data-lucide="globe" style="width:22px;height:22px;color:var(--cyan);display:block;margin:0 auto .6rem"></i>
+            <div class="stat-value glow-cyan" style="font-size:1.4rem">Top 20</div>
+            <div class="stat-label">Global Ranking</div>
+          </div>
+        </div>
+        <div class="target-card glass">
+          <div class="target-icon">
+            <i data-lucide="building-2" style="width:18px;height:18px"></i>
+          </div>
+          <div>
+            <div class="target-title">Target Opportunity</div>
+            <p class="target-text">Seeking transfer to <strong style="color:#fff">IT Business Section</strong> at Albawani, reporting to <strong style="color:var(--purple)">Mr. Modar Sheikh Saeed</strong>. Ready to deliver measurable impact from day one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACADEMIC -->
+<section id="academic">
+  <div class="academic-left-glow"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="badge badge-purple" style="margin-bottom:1rem">
+        <i data-lucide="sparkles" style="width:11px;height:11px"></i> Academic Excellence
+      </div>
+      <h2>Education & <span class="glow-purple">Credentials</span></h2>
+      <p>Building expertise through rigorous academic and professional development</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="academic-main">
+      <div class="reveal">
+        <div class="glass glass-hover univ-card" style="border-color:rgba(0,240,255,.15)">
+          <div class="univ-glow"></div>
+          <div class="univ-header">
+            <div class="univ-icon">
+              <i data-lucide="graduation-cap" style="width:26px;height:26px"></i>
+            </div>
+            <div>
+              <div class="univ-name">University of Tabuk</div>
+              <div class="univ-degree">Bachelor of Computer Engineering</div>
+              <div class="univ-meta">
+                <span class="univ-meta-item">
+                  <i data-lucide="map-pin" style="color:var(--text4)"></i> Tabuk, Saudi Arabia
+                </span>
+                <span class="univ-meta-item">
+                  <i data-lucide="calendar" style="color:var(--text4)"></i> Graduated with Honors
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="gpa-grid">
+            <div class="gpa-cell" style="background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.2)">
+              <div class="gpa-cell-label">GPA</div>
+              <div class="gpa-cell-value glow-cyan">4.74 / 5</div>
+            </div>
+            <div class="gpa-cell" style="background:rgba(176,0,255,.08);border:1px solid rgba(176,0,255,.2)">
+              <div class="gpa-cell-label">Class Rank</div>
+              <div class="gpa-cell-value" style="color:var(--purple)">2nd in Batch</div>
+            </div>
+            <div class="gpa-cell" style="background:rgba(0,102,255,.08);border:1px solid rgba(0,102,255,.2)">
+              <div class="gpa-cell-label">Honors</div>
+              <div class="gpa-cell-value" style="color:var(--blue)">Excellent</div>
+            </div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:.45rem">
+            <span class="tag"><i data-lucide="cpu" style="width:11px;height:11px"></i>Embedded Systems</span>
+            <span class="tag tag-blue"><i data-lucide="wifi" style="width:11px;height:11px"></i>Computer Networks</span>
+            <span class="tag tag-purple"><i data-lucide="brain" style="width:11px;height:11px"></i>Artificial Intelligence</span>
+            <span class="tag"><i data-lucide="shield" style="width:11px;height:11px"></i>Cybersecurity</span>
+            <span class="tag tag-blue"><i data-lucide="code-2" style="width:11px;height:11px"></i>Software Engineering</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="glass glass-hover ieee-card" style="border-color:rgba(176,0,255,.2);height:100%">
+          <div>
+            <div class="ieee-icon">
+              <i data-lucide="users" style="width:22px;height:22px"></i>
+            </div>
+            <div class="ieee-title">IEEE Member</div>
+            <p class="ieee-text">Official member of the Institute of Electrical and Electronics Engineers — the world's largest technical professional organization for advancing technology.</p>
+          </div>
+          <div class="ieee-badge-box">
+            <div class="ieee-badge-label">Membership Type</div>
+            <div class="ieee-badge-val">Student → Graduate Member</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div style="display:flex;align-items:center;gap:.65rem;font-weight:700;font-size:1rem;color:#fff;margin-bottom:1.25rem">
+        <i data-lucide="file-check" style="width:20px;height:20px;color:var(--cyan)"></i>
+        Professional Certifications
+      </div>
+      <div class="certs-visual-grid">
+        <div class="glass glass-hover cert-img-card reveal" style="border-color:rgba(0,240,255,.2)">
+          <div class="cert-img-thumb" onclick="openLightbox('img/IEEECard.png','IEEE Membership Card')">
+            <img src="img/IEEECard.png" alt="IEEE Membership Card" loading="lazy">
+            <div class="cert-img-overlay"><i data-lucide="zoom-in" style="width:20px;height:20px"></i> View</div>
+          </div>
+          <div class="cert-img-body">
+            <div class="cert-img-title">Active IEEE Member</div>
+            <div class="cert-img-org">Institute of Electrical and Electronics Engineers</div>
+            <p class="cert-img-note">Official member of the world's largest technical professional organization, reflecting a strong commitment to technological advancement and global best practices.</p>
+            <button class="view-cert-btn" onclick="openLightbox('img/IEEECard.png','IEEE Membership Card')">
+              <i data-lucide="external-link" style="width:12px;height:12px"></i> View Card
+            </button>
+          </div>
+        </div>
+        <div class="glass glass-hover cert-img-card reveal reveal-delay-1" style="border-color:rgba(0,102,255,.2)">
+          <div class="cert-img-thumb" onclick="openLightbox('img/edutech.png','Microcontroller & Industrial Applications — Coursera')">
+            <img src="img/edutech.png" alt="Coursera EduTech" loading="lazy">
+            <div class="cert-img-overlay"><i data-lucide="zoom-in" style="width:20px;height:20px"></i> View</div>
+          </div>
+          <div class="cert-img-body">
+            <div class="cert-img-title">Microcontroller & Industrial Applications</div>
+            <div class="cert-img-org">Coursera — L&T EduTech &nbsp;|&nbsp; Oct 2024</div>
+            <p class="cert-img-note">Completed a specialized course focusing on practical implementation and programming of microcontrollers for industrial automation and real-world applications.</p>
+            <button class="view-cert-btn" onclick="openLightbox('img/edutech.png','Microcontroller & Industrial Applications — Coursera')" style="color:var(--blue);background:rgba(0,102,255,.08);border-color:rgba(0,102,255,.25)">
+              <i data-lucide="external-link" style="width:12px;height:12px"></i> View Certificate
+            </button>
+          </div>
+        </div>
+        <div class="glass glass-hover cert-img-card reveal reveal-delay-2" style="border-color:rgba(176,0,255,.2)">
+          <div class="cert-img-thumb" onclick="openLightbox('img/Certificat.png','Occupational Safety & Health Professional — HRSD')">
+            <img src="img/Certificat.png" alt="HRSD Safety Certificate" loading="lazy">
+            <div class="cert-img-overlay"><i data-lucide="zoom-in" style="width:20px;height:20px"></i> View</div>
+          </div>
+          <div class="cert-img-body">
+            <div class="cert-img-title">Occupational Safety & Health Professional (Lvl 2)</div>
+            <div class="cert-img-org">Ministry of Human Resources — HRSD</div>
+            <p class="cert-img-note">Completed a comprehensive 4-month training program, earning a Professional Level certification with an <strong style="color:#fff">'Excellent'</strong> grade.</p>
+            <button class="view-cert-btn" onclick="openLightbox('img/Certificat.png','Occupational Safety & Health Professional — HRSD')" style="color:var(--purple);background:rgba(176,0,255,.08);border-color:rgba(176,0,255,.25)">
+              <i data-lucide="external-link" style="width:12px;height:12px"></i> View Certificate
+            </button>
+          </div>
+        </div>
+        <div class="glass glass-hover cert-img-card reveal reveal-delay-3" style="border-color:rgba(0,240,255,.2)">
+          <div class="cert-img-thumb" onclick="openLightbox('img/tabuk.png','Occupational Safety & Health — University of Tabuk')">
+            <img src="img/tabuk.png" alt="Tabuk University Safety Certificate" loading="lazy">
+            <div class="cert-img-overlay"><i data-lucide="zoom-in" style="width:20px;height:20px"></i> View</div>
+          </div>
+          <div class="cert-img-body">
+            <div class="cert-img-title">Occupational Safety & Health Professional Program</div>
+            <div class="cert-img-org">University of Tabuk — Research & Consulting Institute</div>
+            <p class="cert-img-note">Completed a comprehensive 4-month training program, achieving an <strong style="color:#fff">Excellent grade (89%)</strong>. Provided a strong foundation for safety protocols and risk management in engineering environments.</p>
+            <button class="view-cert-btn" onclick="openLightbox('img/tabuk.png','Occupational Safety & Health — University of Tabuk')">
+              <i data-lucide="external-link" style="width:12px;height:12px"></i> View Certificate
+            </button>
+          </div>
+        </div>
+        <div class="glass glass-hover cert-img-card reveal reveal-delay-4" style="border-color:rgba(0,102,255,.2)">
+          <div class="cert-img-thumb" onclick="openLightbox('img/edutech2.png','Introduction to Architecting Smart IoT Devices — Coursera & EIT Digital')">
+            <img src="img/edutech2.png" alt="EIT Digital IoT Course" loading="lazy">
+            <div class="cert-img-overlay"><i data-lucide="zoom-in" style="width:20px;height:20px"></i> View</div>
+          </div>
+          <div class="cert-img-body">
+            <div class="cert-img-title">Introduction to Architecting Smart IoT Devices</div>
+            <div class="cert-img-org">Coursera &amp; EIT Digital (EU Co-funded) &nbsp;|&nbsp; Oct 2024</div>
+            <p class="cert-img-note">Completed a specialized course focused on designing and architecting smart IoT devices, with emphasis on embedded systems integration and developing scalable, interconnected technical solutions.</p>
+            <button class="view-cert-btn" onclick="openLightbox('img/edutech2.png','Introduction to Architecting Smart IoT Devices — Coursera & EIT Digital')" style="color:var(--blue);background:rgba(0,102,255,.08);border-color:rgba(0,102,255,.25)">
+              <i data-lucide="external-link" style="width:12px;height:12px"></i> View Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="certs-grid">
+        <div class="glass glass-hover cert-row reveal" style="border-color:rgba(0,102,255,.2)">
+          <div class="cert-icon" style="background:rgba(0,102,255,.15);border:1px solid rgba(0,102,255,.3)">
+            <i data-lucide="network" style="width:20px;height:20px;color:var(--blue)"></i>
+          </div>
+          <div>
+            <div class="cert-name">CCNA</div>
+            <div class="cert-org">Cisco</div>
+          </div>
+          <div class="cert-check"><i data-lucide="check-circle" style="width:16px;height:16px"></i></div>
+        </div>
+        <div class="glass glass-hover cert-row reveal reveal-delay-1" style="border-color:rgba(0,240,255,.2)">
+          <div class="cert-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.3)">
+            <i data-lucide="shield" style="width:20px;height:20px;color:var(--cyan)"></i>
+          </div>
+          <div>
+            <div class="cert-name">Cybersecurity Essentials</div>
+            <div class="cert-org">Cisco</div>
+          </div>
+          <div class="cert-check"><i data-lucide="check-circle" style="width:16px;height:16px"></i></div>
+        </div>
+        <div class="glass glass-hover cert-row reveal reveal-delay-2" style="border-color:rgba(176,0,255,.2)">
+          <div class="cert-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.3)">
+            <i data-lucide="lock" style="width:20px;height:20px;color:var(--purple)"></i>
+          </div>
+          <div>
+            <div class="cert-name">Network Security</div>
+            <div class="cert-org">Cisco</div>
+          </div>
+          <div class="cert-check"><i data-lucide="check-circle" style="width:16px;height:16px"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-right-glow"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="badge badge-cyan" style="margin-bottom:1rem">
+        <i data-lucide="sparkles" style="width:11px;height:11px"></i> Technical Skills
+      </div>
+      <h2>Tech <span class="glow-cyan">Expertise</span></h2>
+      <p>A comprehensive skillset spanning hardware, software, and security</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="skills-split">
+      <div class="reveal">
+        <div class="glass glass-hover skills-card" style="border-color:rgba(0,240,255,.15)">
+          <div class="skills-card-title">
+            <i data-lucide="code-2" style="width:20px;height:20px;color:var(--cyan)"></i>
+            Programming Languages
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">Python</span>
+              <span class="skill-bar-pct" style="color:var(--cyan)">88%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="88" style="background:linear-gradient(90deg,rgba(0,240,255,.6),var(--cyan));box-shadow:0 0 10px rgba(0,240,255,.6)"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">C / C++</span>
+              <span class="skill-bar-pct" style="color:var(--blue)">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="85" style="background:linear-gradient(90deg,rgba(0,102,255,.6),var(--blue));box-shadow:0 0 10px rgba(0,102,255,.6)"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">C#</span>
+              <span class="skill-bar-pct" style="color:var(--purple)">78%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="78" style="background:linear-gradient(90deg,rgba(176,0,255,.6),var(--purple));box-shadow:0 0 10px rgba(176,0,255,.6)"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">JavaScript</span>
+              <span class="skill-bar-pct" style="color:var(--cyan)">75%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="75" style="background:linear-gradient(90deg,rgba(0,240,255,.6),var(--cyan));box-shadow:0 0 10px rgba(0,240,255,.6)"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">HTML / CSS</span>
+              <span class="skill-bar-pct" style="color:var(--blue)">82%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="82" style="background:linear-gradient(90deg,rgba(0,102,255,.6),var(--blue));box-shadow:0 0 10px rgba(0,102,255,.6)"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="glass glass-hover skills-card" style="border-color:rgba(176,0,255,.15)">
+          <div class="skills-card-title">
+            <i data-lucide="layers" style="width:20px;height:20px;color:var(--purple)"></i>
+            Specialized Domains
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">Embedded Systems & Firmware</span>
+              <span class="skill-bar-pct" style="color:var(--purple)">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="90" style="background:linear-gradient(90deg,rgba(176,0,255,.6),var(--purple));box-shadow:0 0 10px rgba(176,0,255,.6)"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">IoT Architecture & Integration</span>
+              <span class="skill-bar-pct" style="color:var(--cyan)">88%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="88" style="background:linear-gradient(90deg,rgba(0,240,255,.6),var(--cyan));box-shadow:0 0 10px rgba(0,240,255,.6)"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">AI / ML Implementation</span>
+              <span class="skill-bar-pct" style="color:var(--blue)">78%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="78" style="background:linear-gradient(90deg,rgba(0,102,255,.6),var(--blue));box-shadow:0 0 10px rgba(0,102,255,.6)"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">Network & Infrastructure</span>
+              <span class="skill-bar-pct" style="color:var(--purple)">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="85" style="background:linear-gradient(90deg,rgba(176,0,255,.6),var(--purple));box-shadow:0 0 10px rgba(176,0,255,.6)"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">Cybersecurity & Hardening</span>
+              <span class="skill-bar-pct" style="color:var(--cyan)">82%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="82" style="background:linear-gradient(90deg,rgba(0,240,255,.6),var(--cyan));box-shadow:0 0 10px rgba(0,240,255,.6)"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="glass glass-hover" style="padding:2rem;border-color:rgba(0,102,255,.15);border-radius:1rem;margin-bottom:1.5rem">
+        <div style="display:flex;align-items:center;gap:.65rem;font-weight:700;color:#fff;margin-bottom:1.5rem;font-size:1rem">
+          <i data-lucide="layers" style="width:20px;height:20px;color:var(--blue)"></i>
+          Technology Stack & Domains
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item" style="background:rgba(0,240,255,.05);border:1px solid rgba(0,240,255,.15)">
+            <div class="tech-item-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.25)"><i data-lucide="cpu" style="color:var(--cyan)"></i></div>
+            <span>Embedded Systems</span>
+          </div>
+          <div class="tech-item" style="background:rgba(0,102,255,.05);border:1px solid rgba(0,102,255,.15)">
+            <div class="tech-item-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.25)"><i data-lucide="wifi" style="color:var(--blue)"></i></div>
+            <span>IoT Platforms</span>
+          </div>
+          <div class="tech-item" style="background:rgba(176,0,255,.05);border:1px solid rgba(176,0,255,.15)">
+            <div class="tech-item-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.25)"><i data-lucide="brain" style="color:var(--purple)"></i></div>
+            <span>AI / Machine Learning</span>
+          </div>
+          <div class="tech-item" style="background:rgba(0,240,255,.05);border:1px solid rgba(0,240,255,.15)">
+            <div class="tech-item-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.25)"><i data-lucide="network" style="color:var(--cyan)"></i></div>
+            <span>CCNA Networking</span>
+          </div>
+          <div class="tech-item" style="background:rgba(0,102,255,.05);border:1px solid rgba(0,102,255,.15)">
+            <div class="tech-item-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.25)"><i data-lucide="shield" style="color:var(--blue)"></i></div>
+            <span>Cybersecurity</span>
+          </div>
+          <div class="tech-item" style="background:rgba(176,0,255,.05);border:1px solid rgba(176,0,255,.15)">
+            <div class="tech-item-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.25)"><i data-lucide="database" style="color:var(--purple)"></i></div>
+            <span>Cloud & Servers</span>
+          </div>
+          <div class="tech-item" style="background:rgba(0,240,255,.05);border:1px solid rgba(0,240,255,.15)">
+            <div class="tech-item-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.25)"><i data-lucide="code-2" style="color:var(--cyan)"></i></div>
+            <span>Full Stack Dev</span>
+          </div>
+          <div class="tech-item" style="background:rgba(0,102,255,.05);border:1px solid rgba(0,102,255,.15)">
+            <div class="tech-item-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.25)"><i data-lucide="monitor-speaker" style="color:var(--blue)"></i></div>
+            <span>Smart Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="glass glass-hover impl-card" style="border-color:rgba(0,240,255,.15);border-radius:1rem">
+        <div class="impl-title">
+          <i data-lucide="briefcase" style="width:20px;height:20px"></i>
+          Practical Implementation Highlight
+        </div>
+        <div class="impl-grid">
+          <div>
+            <div style="font-weight:700;font-size:.95rem;color:var(--cyan);margin-bottom:.65rem">Secure Exam Portal — Full Stack</div>
+            <p class="impl-desc">Developed a fully integrated secure examination system featuring dedicated server infrastructure, cloud synchronization, real-time dashboard, and advanced anti-cheat security mechanisms.</p>
+          </div>
+          <div class="impl-tags">
+            <span class="tag">Server Architecture</span>
+            <span class="tag">Cloud Sync</span>
+            <span class="tag">Real-time Dashboard</span>
+            <span class="tag">Anti-Cheat Engine</span>
+            <span class="tag">Security Hardening</span>
+            <span class="tag">Full Stack Dev</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="proj-top-glow"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="badge badge-cyan" style="margin-bottom:1rem">
+        <i data-lucide="sparkles" style="width:11px;height:11px"></i> Hands-On Work
+      </div>
+      <h2>Featured <span class="glow-cyan">Projects</span></h2>
+      <p>Real embedded systems and IoT builds — from schematic to deployment</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="proj-grid">
+
+      <!-- PROJECT 1 -->
+      <div class="glass proj-card reveal" style="border-color:rgba(0,240,255,.18)">
+        <div class="proj-tabs-row">
+          <button class="proj-tab-btn active" id="p1-tab-s" onclick="switchProj('p1','s')">
+            <i data-lucide="cpu" style="width:12px;height:12px"></i> Schematic
+          </button>
+          <button class="proj-tab-btn" id="p1-tab-r" onclick="switchProj('p1','r')">
+            <i data-lucide="camera" style="width:12px;height:12px"></i> Real Build
+          </button>
+        </div>
+        <div class="proj-img-frame" onclick="openLightbox(document.getElementById('p1-img').src, 'Home Controllable Humidifier')">
+          <img id="p1-img" src="img/pro1.png" alt="Humidifier Schematic" loading="lazy">
+          <div class="proj-zoom"><i data-lucide="zoom-in" style="width:18px;height:18px"></i> Expand</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-num" style="color:var(--cyan)">Project 01 · Embedded Systems + IoT</div>
+          <div class="proj-title">Home Controllable Humidifier</div>
+          <p class="proj-desc">Designed and implemented an automated home humidifier system with smart environmental monitoring. Uses a <strong style="color:#fff">DHT11 sensor</strong> for real-time temperature and humidity readings displayed on an LCD. Users set desired humidity via a potentiometer; the system automatically activates an <strong style="color:#fff">ultrasonic mist maker</strong> and fan when humidity drops below threshold. A water-level sensor provides automatic shutdown protection to prevent hardware damage.</p>
+          <div class="proj-tags">
+            <span class="tag"><i data-lucide="cpu" style="width:10px;height:10px"></i>Arduino</span>
+            <span class="tag">DHT11 Sensor</span>
+            <span class="tag">LCD Display</span>
+            <span class="tag">Relay Module</span>
+            <span class="tag tag-purple">Ultrasonic Mist</span>
+            <span class="tag tag-purple">Water Level Sensor</span>
+            <span class="tag tag-blue">C++</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="glass proj-card reveal reveal-delay-1" style="border-color:rgba(176,0,255,.18)">
+        <div class="proj-tabs-row">
+          <button class="proj-tab-btn active" id="p2-tab-s" onclick="switchProj('p2','s')">
+            <i data-lucide="cpu" style="width:12px;height:12px"></i> Schematic
+          </button>
+          <button class="proj-tab-btn" id="p2-tab-r" onclick="switchProj('p2','r')">
+            <i data-lucide="camera" style="width:12px;height:12px"></i> Real Build
+          </button>
+        </div>
+        <div class="proj-img-frame" onclick="openLightbox(document.getElementById('p2-img').src, 'Smart Garage Side Parking Sensor')">
+          <img id="p2-img" src="img/pro3.png" alt="Parking Sensor Schematic" loading="lazy">
+          <div class="proj-zoom"><i data-lucide="zoom-in" style="width:18px;height:18px"></i> Expand</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-num" style="color:var(--purple)">Project 02 · Embedded Systems + Sensors</div>
+          <div class="proj-title">Smart Garage Side Parking Sensor</div>
+          <p class="proj-desc">Designed and implemented an automated parking assist system using <strong style="color:#fff">Arduino</strong> and an <strong style="color:#fff">HC-SR04 ultrasonic sensor</strong> to measure vehicle-to-wall distance in real-time. Features a <strong style="color:#fff">4-digit 7-segment display</strong> for accurate distance readout, with dynamic <strong style="color:#fff">RGB LED</strong> and <strong style="color:#fff">Buzzer</strong> feedback alerts based on proximity thresholds (&lt;10cm, 10–30cm, &gt;30cm) to prevent collisions and enhance safety.</p>
+          <div class="proj-tags">
+            <span class="tag tag-purple"><i data-lucide="cpu" style="width:10px;height:10px"></i>Arduino</span>
+            <span class="tag tag-purple">HC-SR04 Ultrasonic</span>
+            <span class="tag tag-purple">7-Segment Display</span>
+            <span class="tag">RGB LED</span>
+            <span class="tag">Buzzer</span>
+            <span class="tag tag-blue">C++</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="achievements-center-glow"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="badge badge-purple" style="margin-bottom:1rem">
+        <i data-lucide="sparkles" style="width:11px;height:11px"></i> Awards & Recognition
+      </div>
+      <h2>Achievements & <span class="glow-purple">Awards</span></h2>
+      <p>A track record of excellence validated at university, national, and global levels</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="ach-grid">
+
+      <div class="glass ach-card highlight reveal" style="background:linear-gradient(135deg,rgba(0,240,255,.08),rgba(255,255,255,.01));border:1px solid rgba(0,240,255,.4);box-shadow:0 0 30px rgba(0,240,255,.08)">
+        <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,240,255,.7),transparent);border-radius:1rem 1rem 0 0"></div>
+        <div class="ach-card-top">
+          <div class="ach-icon-box" style="background:rgba(0,240,255,.15);border:1px solid rgba(0,240,255,.35);box-shadow:0 0 15px rgba(0,240,255,.25)">
+            <i data-lucide="shield" style="color:var(--cyan)"></i>
+          </div>
+          <span class="ach-tag-pill" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.3);color:var(--cyan)">Innovation</span>
+        </div>
+        <div>
+          <div class="ach-title">Patent Holder</div>
+          <p class="ach-desc">Registered patent for an innovative technical invention during undergraduate studies — a rare and distinguished achievement.</p>
+        </div>
+      </div>
+
+      <div class="glass ach-card highlight reveal reveal-delay-1" style="background:linear-gradient(135deg,rgba(176,0,255,.08),rgba(255,255,255,.01));border:1px solid rgba(176,0,255,.4);box-shadow:0 0 30px rgba(176,0,255,.08)">
+        <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,0,255,.7),transparent);border-radius:1rem 1rem 0 0"></div>
+        <div class="ach-card-top">
+          <div class="ach-icon-box" style="background:rgba(176,0,255,.15);border:1px solid rgba(176,0,255,.35);box-shadow:0 0 15px rgba(176,0,255,.25)">
+            <i data-lucide="crown" style="color:var(--purple)"></i>
+          </div>
+          <span class="ach-tag-pill" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.3);color:var(--purple)">Award</span>
+        </div>
+        <div>
+          <div class="ach-title">1st Place — Tabuk University</div>
+          <p class="ach-desc">Won first place at Tabuk University graduation project competition with a fully integrated IoT + AI + Embedded Systems solution.</p>
+        </div>
+      </div>
+
+      <div class="glass ach-card reveal reveal-delay-2" style="border:1px solid rgba(255,255,255,.07)">
+        <div class="ach-card-top">
+          <div class="ach-icon-box" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.3)">
+            <i data-lucide="trophy" style="color:var(--blue)"></i>
+          </div>
+          <span class="ach-tag-pill" style="background:rgba(0,102,255,.1);border:1px solid rgba(0,102,255,.25);color:var(--blue)">National</span>
+        </div>
+        <div>
+          <div class="ach-title">3rd Place — ICCiT Expo</div>
+          <p class="ach-desc">Placed 3rd nationally at the Innovative Computing and Communications in Technology Expo for the graduation project.</p>
+        </div>
+      </div>
+
+      <div class="glass ach-card reveal" style="border:1px solid rgba(255,255,255,.07)">
+        <div class="ach-card-top">
+          <div class="ach-icon-box" style="background:rgba(0,240,255,.1);border:1px solid rgba(0,240,255,.25)">
+            <i data-lucide="cpu" style="color:var(--cyan)"></i>
+          </div>
+          <span class="ach-tag-pill" style="background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.22);color:var(--cyan)">IoT & AI</span>
+        </div>
+        <div>
+          <div class="ach-title">Smart Wheelchair — ICCiT 3rd</div>
+          <p class="ach-desc">3rd Place at ICCiT for a Smart Wheelchair with Multi-Control Modes integrating IoT, Embedded Systems, and AI.</p>
+        </div>
+      </div>
+
+      <div class="glass ach-card highlight reveal reveal-delay-1" style="background:linear-gradient(135deg,rgba(176,0,255,.07),rgba(255,255,255,.01));border:1px solid rgba(176,0,255,.35);box-shadow:0 0 25px rgba(176,0,255,.07)">
+        <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,0,255,.6),transparent);border-radius:1rem 1rem 0 0"></div>
+        <div class="ach-card-top">
+          <div class="ach-icon-box" style="background:rgba(176,0,255,.15);border:1px solid rgba(176,0,255,.35);box-shadow:0 0 12px rgba(176,0,255,.2)">
+            <i data-lucide="globe" style="color:var(--purple)"></i>
+          </div>
+          <span class="ach-tag-pill" style="background:rgba(176,0,255,.1);border:1px solid rgba(176,0,255,.28);color:var(--purple)">Global</span>
+        </div>
+        <div>
+          <div class="ach-title">Top 20 Worldwide — Black Hat MEA</div>
+          <p class="ach-desc">Ranked in the Top 20 globally in a competitive Cybersecurity challenge at Black Hat Middle East & Africa.</p>
+        </div>
+      </div>
+
+      <div class="glass ach-card reveal reveal-delay-2" style="border:1px solid rgba(255,255,255,.07)">
+        <div class="ach-card-top">
+          <div class="ach-icon-box" style="background:rgba(0,102,255,.1);border:1px solid rgba(0,102,255,.25)">
+            <i data-lucide="star" style="color:var(--blue)"></i>
+          </div>
+          <span class="ach-tag-pill" style="background:rgba(0,102,255,.08);border:1px solid rgba(0,102,255,.22);color:var(--blue)">Exhibition</span>
+        </div>
+        <div>
+          <div class="ach-title">LEAP Tech Exhibition</div>
+          <p class="ach-desc">Selected as a participant and presenter at LEAP, one of the world's largest technology exhibitions held in Riyadh.</p>
+        </div>
+      </div>
+
+      <div class="glass ach-card reveal" style="border:1px solid rgba(255,255,255,.07)">
+        <div class="ach-card-top">
+          <div class="ach-icon-box" style="background:rgba(0,240,255,.1);border:1px solid rgba(0,240,255,.25)">
+            <i data-lucide="bar-chart-3" style="color:var(--cyan)"></i>
+          </div>
+          <span class="ach-tag-pill" style="background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.22);color:var(--cyan)">Portfolio</span>
+        </div>
+        <div>
+          <div class="ach-title">23+ Technical Projects</div>
+          <p class="ach-desc">Completed over 23 hands-on technical projects spanning embedded systems, IoT, AI, cybersecurity, and networking.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-bottom-glow"></div>
+  <div class="grid-bg" style="position:absolute;inset:0;pointer-events:none;opacity:.5"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div class="section-head reveal">
+      <div class="badge badge-cyan" style="margin-bottom:1rem">
+        <i data-lucide="sparkles" style="width:11px;height:11px"></i> Get In Touch
+      </div>
+      <h2>Let's <span class="glow-cyan">Connect</span></h2>
+      <p>Ready to contribute from day one — prepared for practical assessments</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="glass glass-hover contact-card" style="border-color:rgba(176,0,255,.2)">
+          <div class="contact-card-header">
+            <div class="contact-icon">
+              <i data-lucide="target" style="width:20px;height:20px"></i>
+            </div>
+            <div>
+              <div class="contact-title">Direct Message</div>
+              <div class="contact-subtitle">Albawani · IT Business Section</div>
+            </div>
+          </div>
+          <div class="letter-box">
+            <p class="letter-text" style="margin-bottom:.75rem">Dear <strong>Mr. Modar Sheikh Saeed</strong>,</p>
+            <p class="letter-text" style="margin-bottom:.75rem">I am <span class="hl">Khaled Alghamdi</span>, a Computer Engineering graduate with a GPA of 4.74/5, specializing in Embedded Systems, IoT, AI, and Cybersecurity. I believe my technical background and strategic mindset make me a strong fit for the IT Business Section at Albawani.</p>
+            <p class="letter-text">I am <strong>fully prepared for a probationary period or practical assessments</strong> to demonstrate my capabilities, dedication, and the value I can bring to Albawani's projects and digital transformation initiatives.</p>
+          </div>
+          <div class="ready-row">
+            <i data-lucide="check-circle" style="width:17px;height:17px"></i>
+            <span>Available for immediate start</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="contact-items" style="margin-bottom:1rem">
+          <div class="glass glass-hover contact-item" style="border-color:rgba(0,240,255,.18)" onclick="location.href='mailto:f3r3.22@gmail.com'" role="link" style="cursor:pointer">
+            <div class="ci-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.3)">
+              <i data-lucide="mail" style="width:19px;height:19px;color:var(--cyan)"></i>
+            </div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-value">f3r3.22@gmail.com</div>
+            </div>
+            <div class="ci-link"><i data-lucide="external-link"></i></div>
+          </div>
+          <div class="glass glass-hover contact-item" style="border-color:rgba(176,0,255,.18)" onclick="location.href='tel:+966557485369'" role="link" style="cursor:pointer">
+            <div class="ci-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.3)">
+              <i data-lucide="phone" style="width:19px;height:19px;color:var(--purple)"></i>
+            </div>
+            <div>
+              <div class="ci-label">Phone</div>
+              <div class="ci-value">+966 557 485 369</div>
+            </div>
+            <div class="ci-link"><i data-lucide="external-link"></i></div>
+          </div>
+          <div class="glass glass-hover contact-item" style="border-color:rgba(0,102,255,.18)">
+            <div class="ci-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.3)">
+              <i data-lucide="linkedin" style="width:19px;height:19px;color:var(--blue)"></i>
+            </div>
+            <div>
+              <div class="ci-label">LinkedIn</div>
+              <div class="ci-value">linkedin.com/in/khaled-alghamdi</div>
+            </div>
+            <div class="ci-link"><i data-lucide="external-link"></i></div>
+          </div>
+        </div>
+        <div class="glass albawani-card" style="border-color:rgba(0,240,255,.18)">
+          <div style="margin:0 auto 1rem;display:flex;justify-content:center;padding:.5rem 0">
+            <img src="img/albwani.png" alt="Albawani" style="height:60px;width:auto;object-fit:contain;filter:drop-shadow(0 0 12px rgba(0,240,255,.25))">
+          </div>
+          <div class="albawani-name">Albawani Company</div>
+          <div class="albawani-section">IT Business Section</div>
+          <p class="albawani-note">A company with the scale, vision, and infrastructure where my skills and dedication can generate real, measurable impact.</p>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="cta-box">
+        <div class="cta-box-glow"></div>
+        <i data-lucide="sparkles" style="width:32px;height:32px;color:var(--cyan);display:block;margin:0 auto 1rem" class="cta-icon"></i>
+        <h3 class="cta-title">Ready to <span class="glow-cyan">Prove My Value</span></h3>
+        <p class="cta-sub">Whether through a practical assessment, probationary period, or direct contribution — I am fully committed to demonstrating how my skills can support Albawani's IT infrastructure and digital transformation goals.</p>
+        <a href="mailto:f3r3.22@gmail.com" class="btn-primary" style="display:inline-flex">
+          <i data-lucide="zap" style="width:17px;height:17px"></i>
+          Start the Conversation
+          <i data-lucide="arrow-right" style="width:17px;height:17px"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div style="display:flex;justify-content:center;margin-bottom:.85rem">
+      <img src="img/albwani.png" alt="Albawani" style="height:32px;width:auto;object-fit:contain;opacity:.55;filter:grayscale(.4)">
+    </div>
+    <p>Crafted by <span class="hl">Khaled Alghamdi</span> &nbsp;·&nbsp; Computer Engineer · Tabuk University</p>
+    <p>Prepared exclusively for <span class="hl2">Albawani IT Business Section</span> — Attn: Mr. Modar Sheikh Saeed</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  lucide.createIcons();
+
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 40) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+  });
+
+  let mobileOpen = false;
+  const menuBtn = document.getElementById('menuBtn');
+  const navMobile = document.getElementById('navMobile');
+  menuBtn.addEventListener('click', function(){
+    mobileOpen = !mobileOpen;
+    navMobile.style.display = mobileOpen ? 'flex' : 'none';
+    menuBtn.innerHTML = mobileOpen
+      ? '<i data-lucide="x" style="width:20px;height:20px"></i>'
+      : '<i data-lucide="menu" style="width:20px;height:20px"></i>';
+    lucide.createIcons();
+  });
+  window.closeMobile = function(){
+    mobileOpen = false;
+    navMobile.style.display = 'none';
+    menuBtn.innerHTML = '<i data-lucide="menu" style="width:20px;height:20px"></i>';
+    lucide.createIcons();
+  };
+
+  const words = ['Computer Engineer','IoT & AI Specialist','Cybersecurity Expert','Embedded Systems Dev','Digital Transformer'];
+  let wIdx=0, cIdx=0, deleting=false;
+  const tw = document.getElementById('typewriterText');
+  function typeStep(){
+    const word = words[wIdx];
+    if(!deleting && cIdx < word.length){
+      tw.textContent = word.slice(0, ++cIdx);
+      setTimeout(typeStep, 75);
+    } else if(!deleting && cIdx === word.length){
+      setTimeout(function(){ deleting=true; typeStep(); }, 1800);
+    } else if(deleting && cIdx > 0){
+      tw.textContent = word.slice(0, --cIdx);
+      setTimeout(typeStep, 40);
+    } else {
+      deleting = false;
+      wIdx = (wIdx+1) % words.length;
+      setTimeout(typeStep, 200);
+    }
+  }
+  typeStep();
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.12, rootMargin: '-40px' });
+  revealEls.forEach(function(el){ revealObserver.observe(el); });
+
+  const skillFills = document.querySelectorAll('.skill-fill');
+  const skillObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.style.width = e.target.getAttribute('data-width') + '%';
+        skillObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  skillFills.forEach(function(el){ skillObserver.observe(el); });
+
+  const canvas = document.getElementById('particleCanvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  function resizeCanvas(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  const pColors = ['#00f0ff','#b000ff','#0066ff'];
+  for(let i=0;i<55;i++){
+    particles.push({
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      r: Math.random() * 1.5 + 0.5,
+      color: pColors[i % 3],
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+      alpha: Math.random() * 0.6 + 0.2,
+      pulse: Math.random() * Math.PI * 2
+    });
+  }
+
+  let heroVisible = true;
+  const heroSection = document.getElementById('hero');
+  new IntersectionObserver(function(e){ heroVisible = e[0].isIntersecting; }, { threshold: 0 }).observe(heroSection);
+
+  function animateParticles(){
+    if(!heroVisible){ requestAnimationFrame(animateParticles); return; }
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(function(p){
+      p.pulse += 0.02;
+      const a = p.alpha * (0.5 + 0.5 * Math.sin(p.pulse));
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = p.color;
+      ctx.globalAlpha = a;
+      ctx.shadowColor = p.color;
+      ctx.shadowBlur = 6;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.shadowBlur = 0;
+      p.x += p.vx;
+      p.y += p.vy;
+      if(p.x < -5) p.x = canvas.width + 5;
+      if(p.x > canvas.width + 5) p.x = -5;
+      if(p.y < -5) p.y = canvas.height + 5;
+      if(p.y > canvas.height + 5) p.y = -5;
+    });
+    requestAnimationFrame(animateParticles);
+  }
+  animateParticles();
+
+  window.switchProj = function(proj, tab){
+    var schematic = proj==='p1' ? 'img/pro1.png' : 'img/pro3.png';
+    var real      = proj==='p1' ? 'img/pro2.png' : 'img/pro4.png';
+    var img   = document.getElementById(proj+'-img');
+    var tabS  = document.getElementById(proj+'-tab-s');
+    var tabR  = document.getElementById(proj+'-tab-r');
+    if(tab==='s'){
+      img.src = schematic;
+      tabS.classList.add('active');
+      tabR.classList.remove('active');
+    } else {
+      img.src = real;
+      tabR.classList.add('active');
+      tabS.classList.remove('active');
+    }
+    lucide.createIcons();
+  };
+
+  var lbOverlay = null;
+  window.openLightbox = function(src, title){
+    if(!lbOverlay){ lbOverlay = document.getElementById('lightboxOverlay'); }
+    document.getElementById('lbImg').src = src;
+    document.getElementById('lbTitle').textContent = title || '';
+    lbOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+  window.closeLightbox = function(){
+    if(!lbOverlay){ lbOverlay = document.getElementById('lightboxOverlay'); }
+    lbOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape') window.closeLightbox();
+  });
+
+})();
+</script>
+
+<div class="lightbox-overlay" id="lightboxOverlay" onclick="if(event.target===this)closeLightbox()">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()">
+      <i data-lucide="x" style="width:14px;height:14px"></i> Close
+    </button>
+    <img class="lightbox-img" id="lbImg" src="" alt="Certificate">
+    <div class="lightbox-title" id="lbTitle"></div>
+  </div>
+</div>
+
+</body>
+</html>
