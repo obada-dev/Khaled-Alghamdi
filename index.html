@@ -326,6 +326,79 @@ footer span.hl2{color:var(--purple)}
 /* CV DOWNLOAD BTN */
 .btn-cv{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:.75rem;font-weight:700;font-size:.9rem;color:var(--cyan);background:rgba(0,240,255,.05);border:1px solid rgba(0,240,255,.3);cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s}
 .btn-cv:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 0 25px rgba(0,240,255,.3);border-color:rgba(0,240,255,.8)}
+
+/* DEDICATION */
+#dedication{position:relative;padding:5rem 0 4rem;background:linear-gradient(180deg,#02020c 0%,#050510 100%);overflow:hidden;border-bottom:1px solid rgba(176,0,255,.12)}
+.ded-bg-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(176,0,255,.07) 0%,transparent 65%);pointer-events:none}
+.ded-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(176,0,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(176,0,255,.018) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.ded-inner{display:flex;align-items:center;gap:3rem;position:relative;z-index:2}
+.ded-photo-wrap{flex-shrink:0;position:relative}
+.ded-photo{width:130px;height:130px;border-radius:50%;overflow:hidden;border:3px solid transparent;background:linear-gradient(#02020c,#02020c) padding-box,linear-gradient(135deg,var(--purple),var(--cyan)) border-box;box-shadow:0 0 35px rgba(176,0,255,.4),0 0 70px rgba(176,0,255,.1)}
+.ded-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.ded-photo::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(176,0,255,.25);animation:pulse-ring 2.8s ease-out infinite}
+.ded-badge{position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--purple),#6600cc);color:#fff;font-size:.6rem;font-weight:800;padding:.28rem .75rem;border-radius:999px;white-space:nowrap;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 0 14px rgba(176,0,255,.5)}
+.ded-content{flex:1}
+.ded-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem}
+.ded-eyebrow::before{content:'';display:inline-block;width:1.8rem;height:1px;background:var(--purple)}
+.ded-name{font-size:clamp(1.2rem,3vw,1.7rem);font-weight:900;color:#fff;margin-bottom:.25rem}
+.ded-role{font-size:.8rem;color:var(--text4);margin-bottom:1.1rem;font-weight:500}
+.ded-quote{font-size:.88rem;color:var(--text2);line-height:1.8;max-width:52rem;font-style:italic;border-left:2px solid rgba(176,0,255,.5);padding-left:1.1rem}
+.ded-quote strong{color:var(--purple);font-style:normal}
+@media(max-width:720px){.ded-inner{flex-direction:column;text-align:center;gap:2rem}.ded-eyebrow{justify-content:center}.ded-eyebrow::before{display:none}.ded-quote{border-left:none;border-top:2px solid rgba(176,0,255,.4);padding-left:0;padding-top:.85rem}}
+
+/* PATENT */
+#patent{padding:6rem 0;background:var(--bg2);position:relative;overflow:hidden}
+.patent-top-glow{position:absolute;left:50%;top:0;transform:translateX(-50%);width:40rem;height:20rem;border-radius:50%;background:radial-gradient(ellipse,rgba(0,240,255,.05) 0%,transparent 70%);pointer-events:none}
+.patent-inner{display:grid;grid-template-columns:1fr 1.25fr;gap:3rem;align-items:center}
+.patent-img-wrap{position:relative}
+.patent-frame{border-radius:1rem;overflow:hidden;cursor:pointer;position:relative;border:1px solid rgba(0,240,255,.25);box-shadow:0 0 40px rgba(0,240,255,.1)}
+.patent-frame img{width:100%;height:auto;display:block;transition:transform .45s}
+.patent-frame:hover img{transform:scale(1.03)}
+.patent-frame-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;color:#fff;font-size:.82rem;font-weight:600;gap:.45rem}
+.patent-frame:hover .patent-frame-overlay{opacity:1}
+.patent-badge-row{display:flex;gap:.65rem;margin-top:1rem;flex-wrap:wrap}
+.patent-text-col{}
+.patent-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.patent-eyebrow i{width:14px;height:14px}
+.patent-title{font-size:clamp(1.4rem,3.5vw,2rem);font-weight:900;color:#fff;line-height:1.2;margin-bottom:1rem}
+.patent-desc{font-size:.88rem;color:var(--text2);line-height:1.8;margin-bottom:1.25rem}
+.patent-highlight-box{padding:1.1rem 1.4rem;border-radius:.75rem;background:linear-gradient(135deg,rgba(0,240,255,.06),rgba(176,0,255,.04));border:1px solid rgba(0,240,255,.2);display:flex;gap:.85rem;align-items:flex-start;margin-bottom:1.25rem}
+.patent-highlight-box i{color:var(--cyan);flex-shrink:0;margin-top:.1rem}
+.patent-highlight-text{font-size:.83rem;color:var(--text3);line-height:1.65}
+.patent-highlight-text strong{color:#fff}
+.patent-stats-row{display:flex;gap:1rem;flex-wrap:wrap}
+.patent-stat{padding:.7rem 1.1rem;border-radius:.65rem;background:rgba(0,240,255,.06);border:1px solid rgba(0,240,255,.18);text-align:center}
+.patent-stat-val{font-weight:900;font-size:1rem;color:var(--cyan);margin-bottom:.1rem}
+.patent-stat-lbl{font-size:.65rem;color:var(--text4)}
+@media(max-width:900px){.patent-inner{grid-template-columns:1fr}}
+
+/* LEAP FEATURE CARD */
+.ach-feature-card{grid-column:1/-1;border-radius:1rem;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;background:linear-gradient(135deg,rgba(0,102,255,.07),rgba(176,0,255,.05));border:1px solid rgba(0,102,255,.35);box-shadow:0 0 35px rgba(0,102,255,.08);transition:all .4s}
+.ach-feature-card:hover{transform:translateY(-4px);box-shadow:0 0 50px rgba(0,102,255,.15)}
+.ach-feature-img{position:relative;overflow:hidden;cursor:pointer;min-height:220px}
+.ach-feature-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s;display:block}
+.ach-feature-img:hover img{transform:scale(1.04)}
+.ach-feature-img-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;color:#fff;font-size:.82rem;font-weight:600;gap:.45rem}
+.ach-feature-img:hover .ach-feature-img-overlay{opacity:1}
+.ach-feature-body{padding:2rem;display:flex;flex-direction:column;justify-content:center;gap:.85rem}
+.ach-feature-tag{font-size:.65rem;font-weight:700;padding:.3rem .75rem;border-radius:999px;background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.3);color:var(--blue);letter-spacing:.06em;width:fit-content}
+.ach-feature-title{font-weight:900;font-size:1.15rem;color:#fff;line-height:1.3}
+.ach-feature-desc{font-size:.81rem;color:var(--text3);line-height:1.7}
+.ach-feature-pills{display:flex;flex-wrap:wrap;gap:.4rem}
+.ach-feature-pill{font-size:.68rem;font-weight:600;padding:.28rem .7rem;border-radius:.4rem;background:rgba(0,102,255,.08);border:1px solid rgba(0,102,255,.2);color:var(--blue)}
+@media(max-width:720px){.ach-feature-card{grid-template-columns:1fr}.ach-feature-img{min-height:200px}}
+
+/* COURSES GRID */
+.courses-wrap{margin-top:2rem}
+.courses-title-row{display:flex;align-items:center;gap:.65rem;font-weight:700;font-size:1rem;color:#fff;margin-bottom:1.25rem}
+.courses-title-row i{color:var(--blue)}
+.courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.85rem}
+.course-card{display:flex;align-items:center;gap:.85rem;padding:1rem 1.1rem;border-radius:.75rem;transition:all .3s;cursor:default}
+.course-card:hover{transform:translateY(-3px) scale(1.02)}
+.course-icon{width:2.5rem;height:2.5rem;border-radius:.6rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.course-icon i{width:16px;height:16px}
+.course-name{font-size:.8rem;font-weight:600;color:var(--text2);line-height:1.35}
+.course-provider{font-size:.67rem;color:var(--text4);margin-top:.12rem}
 </style>
 </head>
 <body>
@@ -363,6 +436,38 @@ footer span.hl2{color:var(--purple)}
     <a href="#contact" class="nav-link" onclick="closeMobile()">Contact</a>
   </div>
 </nav>
+
+<!-- DEDICATION -->
+<section id="dedication">
+  <div class="ded-bg-glow"></div>
+  <div class="ded-grid-bg"></div>
+  <div class="container">
+    <div class="ded-inner reveal">
+      <div class="ded-photo-wrap">
+        <div class="ded-photo">
+          <img src="img/mudarr.png" alt="Mr. Modar Sheikh Saeed">
+        </div>
+        <div class="ded-badge">IT Director</div>
+      </div>
+      <div class="ded-content">
+        <div class="ded-eyebrow">
+          <i data-lucide="heart" style="width:13px;height:13px;color:var(--purple)"></i>
+          Dedicated To
+        </div>
+        <div class="ded-name">Mr. Modar Sheikh Saeed</div>
+        <div class="ded-role">IT Business Section — Albawani Company</div>
+        <blockquote class="ded-quote">
+          "Throughout my professional journey, I have always looked up to industry leaders who seamlessly blend
+          <strong>technical mastery with visionary leadership</strong>. Professionals like
+          <strong>Mr. Modar Sheikh Saeed</strong> exemplify the pinnacle of IT excellence I strive to achieve —
+          where deep expertise meets strategic thinking, and where every system built serves a greater purpose.
+          This portfolio is a humble reflection of that inspiration, prepared with the sincere hope of contributing
+          to the remarkable work happening at <strong>Albawani's IT Business Section</strong>."
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- HERO -->
 <section id="hero">
@@ -433,6 +538,70 @@ footer span.hl2{color:var(--purple)}
   <div class="hero-scroll">
     <span>Scroll</span>
     <i data-lucide="chevron-down" style="width:18px;height:18px"></i>
+  </div>
+</section>
+
+<!-- PATENT -->
+<section id="patent">
+  <div class="patent-top-glow"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="badge badge-cyan" style="margin-bottom:1rem">
+        <i data-lucide="shield" style="width:11px;height:11px"></i> Intellectual Property
+      </div>
+      <h2>Registered <span class="glow-cyan">Patent</span></h2>
+      <p>A distinguished achievement earned during undergraduate studies</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="patent-inner">
+      <div class="patent-img-wrap reveal">
+        <div class="patent-frame" onclick="openLightbox('img/grad.png','Registered Patent — Khaled Alghamdi')">
+          <img src="img/grad.png" alt="Patent Certificate" loading="lazy">
+          <div class="patent-frame-overlay">
+            <i data-lucide="zoom-in" style="width:18px;height:18px"></i> View Full Certificate
+          </div>
+        </div>
+        <div class="patent-badge-row">
+          <span class="badge badge-cyan">
+            <i data-lucide="check-circle" style="width:10px;height:10px"></i> Verified Patent
+          </span>
+          <span class="badge badge-purple">
+            <i data-lucide="star" style="width:10px;height:10px"></i> Undergraduate Achievement
+          </span>
+        </div>
+      </div>
+      <div class="patent-text-col reveal reveal-delay-1">
+        <div class="patent-eyebrow">
+          <i data-lucide="award"></i> Official Saudi Patent Registration
+        </div>
+        <h3 class="patent-title">Registered Patent Holder — <span class="glow-cyan">Innovator Since Graduation</span></h3>
+        <p class="patent-desc">
+          Awarded an official registered patent for a groundbreaking technical invention developed during undergraduate studies at the University of Tabuk. This achievement places Khaled among an exceptionally rare group of students who secure intellectual property rights before completing their Bachelor's degree.
+        </p>
+        <div class="patent-highlight-box">
+          <i data-lucide="lightbulb" style="width:18px;height:18px;margin-top:.1rem"></i>
+          <div class="patent-highlight-text">
+            The patented invention addresses a real-world engineering problem through an innovative integration of
+            <strong>Embedded Systems, IoT connectivity, and AI-driven automation</strong> — directly aligned with
+            Albawani's digital transformation and smart infrastructure goals.
+          </div>
+        </div>
+        <div class="patent-stats-row">
+          <div class="patent-stat">
+            <div class="patent-stat-val">2024</div>
+            <div class="patent-stat-lbl">Year Registered</div>
+          </div>
+          <div class="patent-stat">
+            <div class="patent-stat-val">Saudi Arabia</div>
+            <div class="patent-stat-lbl">Jurisdiction</div>
+          </div>
+          <div class="patent-stat">
+            <div class="patent-stat-val">Undergraduate</div>
+            <div class="patent-stat-lbl">Stage Achieved</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -690,6 +859,168 @@ footer span.hl2{color:var(--purple)}
         </div>
       </div>
     </div>
+
+    <!-- COURSES -->
+    <div class="reveal courses-wrap">
+      <div class="courses-title-row">
+        <i data-lucide="book-open" style="width:20px;height:20px"></i>
+        Completed Courses & Training
+      </div>
+      <div class="courses-grid">
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(176,0,255,.2)">
+          <div class="course-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.28)">
+            <i data-lucide="brain" style="color:var(--purple)"></i>
+          </div>
+          <div>
+            <div class="course-name">Artificial Intelligence (AI)</div>
+            <div class="course-provider">University of Tabuk</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,102,255,.2)">
+          <div class="course-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.28)">
+            <i data-lucide="network" style="color:var(--blue)"></i>
+          </div>
+          <div>
+            <div class="course-name">CCNA</div>
+            <div class="course-provider">Cisco Networking Academy</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,240,255,.2)">
+          <div class="course-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.28)">
+            <i data-lucide="shield" style="color:var(--cyan)"></i>
+          </div>
+          <div>
+            <div class="course-name">Cybersecurity Essentials</div>
+            <div class="course-provider">Cisco Networking Academy</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,102,255,.2)">
+          <div class="course-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.28)">
+            <i data-lucide="server" style="color:var(--blue)"></i>
+          </div>
+          <div>
+            <div class="course-name">Exploring Networking with Cisco Packet Tracer</div>
+            <div class="course-provider">Cisco Networking Academy</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,240,255,.2)">
+          <div class="course-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.28)">
+            <i data-lucide="wifi" style="color:var(--cyan)"></i>
+          </div>
+          <div>
+            <div class="course-name">Introduction to Architecting Smart IoT Devices</div>
+            <div class="course-provider">Coursera — EIT Digital</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(176,0,255,.2)">
+          <div class="course-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.28)">
+            <i data-lucide="lock" style="color:var(--purple)"></i>
+          </div>
+          <div>
+            <div class="course-name">Introduction to Cybersecurity</div>
+            <div class="course-provider">Cisco Networking Academy</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,102,255,.2)">
+          <div class="course-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.28)">
+            <i data-lucide="radio" style="color:var(--blue)"></i>
+          </div>
+          <div>
+            <div class="course-name">Introduction to IoT</div>
+            <div class="course-provider">Cisco Networking Academy</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,240,255,.2)">
+          <div class="course-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.28)">
+            <i data-lucide="cpu" style="color:var(--cyan)"></i>
+          </div>
+          <div>
+            <div class="course-name">Microcontroller & Industrial Applications</div>
+            <div class="course-provider">Coursera — L&T EduTech</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(176,0,255,.2)">
+          <div class="course-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.28)">
+            <i data-lucide="code-2" style="color:var(--purple)"></i>
+          </div>
+          <div>
+            <div class="course-name">PCAP: Programming Essentials in Python</div>
+            <div class="course-provider">Cisco / Python Institute</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,102,255,.2)">
+          <div class="course-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.28)">
+            <i data-lucide="globe" style="color:var(--blue)"></i>
+          </div>
+          <div>
+            <div class="course-name">HTML &amp; CSS</div>
+            <div class="course-provider">Web Development Foundations</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,240,255,.2)">
+          <div class="course-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.28)">
+            <i data-lucide="zap" style="color:var(--cyan)"></i>
+          </div>
+          <div>
+            <div class="course-name">JavaScript</div>
+            <div class="course-provider">Programming Essentials</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(176,0,255,.2)">
+          <div class="course-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.28)">
+            <i data-lucide="terminal" style="color:var(--purple)"></i>
+          </div>
+          <div>
+            <div class="course-name">C++</div>
+            <div class="course-provider">Systems Programming</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,102,255,.2)">
+          <div class="course-icon" style="background:rgba(0,102,255,.12);border:1px solid rgba(0,102,255,.28)">
+            <i data-lucide="layers" style="color:var(--blue)"></i>
+          </div>
+          <div>
+            <div class="course-name">C#</div>
+            <div class="course-provider">.NET Development</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(0,240,255,.2)">
+          <div class="course-icon" style="background:rgba(0,240,255,.12);border:1px solid rgba(0,240,255,.28)">
+            <i data-lucide="microchip" style="color:var(--cyan)"></i>
+          </div>
+          <div>
+            <div class="course-name">Embedded Systems</div>
+            <div class="course-provider">University of Tabuk</div>
+          </div>
+        </div>
+
+        <div class="glass glass-hover course-card" style="border-color:rgba(176,0,255,.2)">
+          <div class="course-icon" style="background:rgba(176,0,255,.12);border:1px solid rgba(176,0,255,.28)">
+            <i data-lucide="file-text" style="color:var(--purple)"></i>
+          </div>
+          <div>
+            <div class="course-name">Microsoft Office</div>
+            <div class="course-provider">Productivity & Office Suite</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1019,16 +1350,27 @@ footer span.hl2{color:var(--purple)}
         </div>
       </div>
 
-      <div class="glass ach-card reveal reveal-delay-2" style="border:1px solid rgba(255,255,255,.07)">
-        <div class="ach-card-top">
-          <div class="ach-icon-box" style="background:rgba(0,102,255,.1);border:1px solid rgba(0,102,255,.25)">
-            <i data-lucide="star" style="color:var(--blue)"></i>
+      <div class="ach-feature-card reveal reveal-delay-2">
+        <div class="ach-feature-img" onclick="openLightbox('img/LEAP.png','LEAP Tech Exhibition — Riyadh, KSA')">
+          <img src="img/LEAP.png" alt="LEAP Tech Exhibition" loading="lazy">
+          <div class="ach-feature-img-overlay">
+            <i data-lucide="zoom-in" style="width:18px;height:18px"></i> View Photo
           </div>
-          <span class="ach-tag-pill" style="background:rgba(0,102,255,.08);border:1px solid rgba(0,102,255,.22);color:var(--blue)">Exhibition</span>
         </div>
-        <div>
-          <div class="ach-title">LEAP Tech Exhibition</div>
-          <p class="ach-desc">Selected as a participant and presenter at LEAP, one of the world's largest technology exhibitions held in Riyadh.</p>
+        <div class="ach-feature-body">
+          <span class="ach-feature-tag">
+            <i data-lucide="star" style="width:10px;height:10px;display:inline;vertical-align:middle;margin-right:.25rem"></i>Global Exhibition
+          </span>
+          <div class="ach-feature-title">Active Participant — LEAP Tech Exhibition</div>
+          <p class="ach-feature-desc">
+            Engaged with global technology leaders and explored cutting-edge innovations in AI, IoT, and Cybersecurity at LEAP — one of the world's largest technology exhibitions held in Riyadh, Saudi Arabia. Represented a fully functional smart engineering project and connected with industry pioneers shaping the future of digital transformation.
+          </p>
+          <div class="ach-feature-pills">
+            <span class="ach-feature-pill">Riyadh, KSA</span>
+            <span class="ach-feature-pill">AI & IoT</span>
+            <span class="ach-feature-pill">Global Networking</span>
+            <span class="ach-feature-pill">Live Demo</span>
+          </div>
         </div>
       </div>
 
