@@ -404,7 +404,7 @@ footer span.hl2{color:var(--purple)}
 #ambassador{position:relative;padding:0;background:linear-gradient(180deg,#050510 0%,#02020f 100%);overflow:hidden;border-bottom:1px solid rgba(255,180,0,.1)}
 .amb-inner{display:grid;grid-template-columns:1fr 1.6fr;min-height:320px;position:relative;z-index:2}
 .amb-img-col{position:relative;overflow:hidden;min-height:260px}
-.amb-img-col img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:brightness(.85);transition:transform .5s}
+.amb-img-col img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:brightness(1);transition:transform .5s}
 .amb-img-col:hover img{transform:scale(1.04)}
 .amb-img-overlay{position:absolute;inset:0;background:linear-gradient(90deg,transparent 55%,#02020f 100%),linear-gradient(180deg,rgba(0,0,0,.2) 0%,transparent 40%)}
 .amb-img-badge{position:absolute;top:1.25rem;left:1.25rem;display:flex;gap:.5rem;flex-wrap:wrap}
@@ -425,6 +425,30 @@ footer span.hl2{color:var(--purple)}
 .proj-live-btn:hover{background:rgba(0,240,255,.14);border-color:rgba(0,240,255,.7);transform:translateY(-2px);box-shadow:0 0 18px rgba(0,240,255,.2)}
 .proj-pass-note{font-size:.68rem;color:var(--text4);display:flex;align-items:center;gap:.3rem}
 .proj-pass-note i{width:11px;height:11px;color:var(--text4)}
+
+/* TOP HIGHLIGHTS */
+#highlights{padding:5rem 0;background:linear-gradient(180deg,#050510 0%,#020210 100%);position:relative;overflow:hidden}
+#highlights::before{content:'';position:absolute;left:50%;top:0;transform:translateX(-50%);width:60rem;height:18rem;border-radius:50%;background:radial-gradient(ellipse,rgba(255,180,0,.04) 0%,transparent 65%);pointer-events:none}
+.hl-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.hl-card{position:relative;border-radius:1rem;overflow:hidden;cursor:pointer;transition:transform .4s,box-shadow .4s;border:1px solid rgba(255,255,255,.07)}
+.hl-card:hover{transform:translateY(-5px) scale(1.015)}
+.hl-card-img{width:100%;min-height:280px;object-fit:cover;object-position:center top;display:block;transition:transform .5s;filter:brightness(1)}
+.hl-card:hover .hl-card-img{transform:scale(1.06);filter:brightness(.8)}
+.hl-card-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.72) 55%,rgba(0,0,0,.93) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.75rem}
+.hl-card-top-badge{position:absolute;top:1rem;left:1rem;display:flex;gap:.5rem;flex-wrap:wrap;z-index:1}
+.hl-badge{font-size:.62rem;font-weight:800;padding:.3rem .8rem;border-radius:999px;letter-spacing:.05em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.hl-badge-gold{background:rgba(240,184,0,.2);border:1px solid rgba(240,184,0,.55);color:#f0b800}
+.hl-badge-cyan{background:rgba(0,240,255,.15);border:1px solid rgba(0,240,255,.45);color:var(--cyan)}
+.hl-badge-purple{background:rgba(176,0,255,.15);border:1px solid rgba(176,0,255,.45);color:var(--purple)}
+.hl-badge-blue{background:rgba(0,102,255,.15);border:1px solid rgba(0,102,255,.45);color:var(--blue)}
+.hl-badge-white{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff}
+.hl-card-label{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem;opacity:.8}
+.hl-card-title{font-size:clamp(.95rem,2vw,1.2rem);font-weight:900;color:#fff;line-height:1.25;margin-bottom:.4rem}
+.hl-card-sub{font-size:.75rem;color:rgba(255,255,255,.65);line-height:1.5}
+.hl-card-action{display:inline-flex;align-items:center;gap:.4rem;margin-top:.75rem;font-size:.72rem;font-weight:700;padding:.45rem 1rem;border-radius:.5rem;border:1px solid;text-decoration:none;transition:all .25s;width:fit-content}
+.hl-card-action:hover{opacity:.85;transform:translateY(-2px)}
+.hl-card-wide{grid-column:1/-1}
+@media(max-width:760px){.hl-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -473,7 +497,7 @@ footer span.hl2{color:var(--purple)}
         <div class="ded-photo">
           <img src="img/mudarr.png" alt="Mr. Modar Sheikh Saeed">
         </div>
-        <div class="ded-badge">IT Director</div>
+        <div class="ded-badge">IT Manager</div>
       </div>
       <div class="ded-content">
         <div class="ded-eyebrow">
@@ -499,7 +523,7 @@ footer span.hl2{color:var(--purple)}
 <section id="ambassador">
   <div class="amb-inner reveal">
     <div class="amb-img-col">
-      <img src="img/mmthl.jpeg" alt="Official Representative — Tabuk University" loading="lazy">
+      <img src="img/mmthl.jpeg" alt="Official Representative — Riyadh University" loading="lazy">
       <div class="amb-img-overlay"></div>
       <div class="amb-img-badge">
         <span style="font-size:.65rem;font-weight:800;padding:.32rem .85rem;border-radius:999px;background:rgba(240,184,0,.15);border:1px solid rgba(240,184,0,.45);color:#f0b800;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(6px)">
@@ -546,7 +570,7 @@ footer span.hl2{color:var(--purple)}
     </div>
     <div class="hero-pill">
       <span class="dot"></span>
-      Available for Opportunities &nbsp;·&nbsp; Tabuk, KSA
+      Available for Opportunities &nbsp;·&nbsp; Riyadh, KSA
     </div>
     <h1 class="hero-h1">
       Hello, I'm<br>
@@ -603,6 +627,117 @@ footer span.hl2{color:var(--purple)}
   <div class="hero-scroll">
     <span>Scroll</span>
     <i data-lucide="chevron-down" style="width:18px;height:18px"></i>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section id="highlights">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="badge badge-gold" style="margin-bottom:1rem;background:rgba(240,184,0,.1);border-color:rgba(240,184,0,.35);color:#f0b800">
+        <i data-lucide="star" style="width:11px;height:11px"></i> Top Recognition
+      </div>
+      <h2>Key <span style="background:linear-gradient(135deg,#f0b800,#ff8800);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Highlights</span></h2>
+      <p>Awards, innovations, and live deployments that define the journey</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="hl-grid reveal">
+
+      <!-- ICCiT 3rd Place — Featured (wide) -->
+      <div class="hl-card hl-card-wide" onclick="openLightbox('img/ttweg.png','3rd Place — Best Innovation ICCiT Expo')"
+           style="border-color:rgba(240,184,0,.25);box-shadow:0 0 40px rgba(240,184,0,.07)">
+        <img class="hl-card-img" src="img/ttweg.png" alt="ICCiT Award" loading="lazy"
+             style="min-height:360px;object-position:center center">
+        <div class="hl-card-top-badge">
+          <span class="hl-badge hl-badge-gold">
+            <i data-lucide="trophy" style="width:10px;height:10px;display:inline;vertical-align:middle;margin-right:.3rem"></i>3rd Place — Best Innovation
+          </span>
+          <span class="hl-badge hl-badge-white">ICCiT International Expo</span>
+        </div>
+        <div class="hl-card-overlay">
+          <div class="hl-card-label" style="color:#f0b800">International Conference on Computing & IT</div>
+          <div class="hl-card-title" style="font-size:clamp(1.1rem,2.5vw,1.55rem)">3rd Place Award — Best Innovation</div>
+          <div class="hl-card-sub">
+            Smart Wheelchair with Multi-Control Modes — Integrating <strong style="color:#fff">IoT, Embedded Systems, AI, and Advanced Sensor Networks</strong>
+            to deliver a real-world assistive technology solution. Competed against numerous international entries at the ICCiT Expo.
+          </div>
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.75rem">
+            <span class="hl-badge hl-badge-gold">IoT + AI</span>
+            <span class="hl-badge hl-badge-cyan">Embedded Systems</span>
+            <span class="hl-badge hl-badge-purple">Sensor Networks</span>
+            <span class="hl-badge hl-badge-white">International</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Best Student -->
+      <div class="hl-card" onclick="openLightbox('img/beststu.png','Best Student Award — University of Tabuk')"
+           style="border-color:rgba(0,240,255,.22);box-shadow:0 0 30px rgba(0,240,255,.05)">
+        <img class="hl-card-img" src="img/beststu.png" alt="Best Student Award" loading="lazy"
+             style="min-height:300px">
+        <div class="hl-card-top-badge">
+          <span class="hl-badge hl-badge-cyan">
+            <i data-lucide="award" style="width:10px;height:10px;display:inline;vertical-align:middle;margin-right:.3rem"></i>Best Student
+          </span>
+          <span class="hl-badge hl-badge-white">University of Tabuk</span>
+        </div>
+        <div class="hl-card-overlay">
+          <div class="hl-card-label" style="color:var(--cyan)">Academic Excellence Award</div>
+          <div class="hl-card-title">Best Student Award</div>
+          <div class="hl-card-sub">
+            Honored with the prestigious 'Best Student' title at the University of Tabuk for exceptional academic performance,
+            leadership, and outstanding technical innovations.
+          </div>
+        </div>
+      </div>
+
+      <!-- HR Portal Live -->
+      <div class="hl-card" style="border-color:rgba(0,102,255,.25);box-shadow:0 0 30px rgba(0,102,255,.07)">
+        <img class="hl-card-img" src="img/dash.png" alt="HR Exam Portal Dashboard" loading="lazy"
+             style="min-height:300px;object-position:center top" onclick="openLightbox('img/dash.png','HR Exam Simulation Portal — Dashboard')">
+        <div class="hl-card-top-badge">
+          <span class="hl-badge hl-badge-blue">
+            <i data-lucide="globe" style="width:10px;height:10px;display:inline;vertical-align:middle;margin-right:.3rem"></i>Live Platform
+          </span>
+          <span class="hl-badge hl-badge-white">University Adopted</span>
+        </div>
+        <div class="hl-card-overlay">
+          <div class="hl-card-label" style="color:var(--blue)">Full-Stack Web Application</div>
+          <div class="hl-card-title">Official HR Exam Simulation Portal</div>
+          <div class="hl-card-sub">
+            Officially adopted by the University of Tabuk. Automated grading, real-time tracking, and secure student records.
+          </div>
+          <a href="https://tabukexnes.netlify.app/admin" target="_blank" rel="noopener"
+             class="hl-card-action"
+             style="color:var(--blue);border-color:rgba(0,102,255,.45);background:rgba(0,102,255,.12)"
+             onclick="event.stopPropagation()">
+            <i data-lucide="external-link" style="width:13px;height:13px"></i> View Live · Password: 1122
+          </a>
+        </div>
+      </div>
+
+      <!-- LEAP Exhibition -->
+      <div class="hl-card" onclick="openLightbox('img/LEAP.png','LEAP Tech Exhibition — Riyadh, KSA')"
+           style="border-color:rgba(176,0,255,.22);box-shadow:0 0 30px rgba(176,0,255,.05)">
+        <img class="hl-card-img" src="img/LEAP.png" alt="LEAP Tech Exhibition" loading="lazy"
+             style="min-height:300px">
+        <div class="hl-card-top-badge">
+          <span class="hl-badge hl-badge-purple">
+            <i data-lucide="star" style="width:10px;height:10px;display:inline;vertical-align:middle;margin-right:.3rem"></i>Global Exhibition
+          </span>
+          <span class="hl-badge hl-badge-white">Riyadh, KSA</span>
+        </div>
+        <div class="hl-card-overlay">
+          <div class="hl-card-label" style="color:var(--purple)">LEAP Tech Exhibition</div>
+          <div class="hl-card-title">Active Participant — LEAP Tech Exhibition</div>
+          <div class="hl-card-sub">
+            Engaged with global technology leaders in AI, IoT, and Cybersecurity at one of the world's largest tech exhibitions, Riyadh.
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -820,6 +955,20 @@ footer span.hl2{color:var(--purple)}
         Professional Certifications
       </div>
       <div class="certs-visual-grid">
+        <div class="glass glass-hover cert-img-card reveal" style="border-color:rgba(240,184,0,.3);box-shadow:0 0 20px rgba(240,184,0,.07)">
+          <div class="cert-img-thumb" onclick="openLightbox('img/wthiqh.png','Bachelor of Science in Computer Engineering — University of Tabuk')">
+            <img src="img/wthiqh.png" alt="BSc Computer Engineering Certificate" loading="lazy">
+            <div class="cert-img-overlay"><i data-lucide="zoom-in" style="width:20px;height:20px"></i> View</div>
+          </div>
+          <div class="cert-img-body">
+            <div class="cert-img-title" style="color:#f0b800">BSc Computer Engineering — Second Class Honors</div>
+            <div class="cert-img-org">University of Tabuk · Faculty of Computer & IT</div>
+            <p class="cert-img-note">GPA: <strong style="color:#fff">4.74 / 5.0 (Excellent)</strong> — Deep foundation in hardware-software integration, embedded systems, network infrastructure, and cybersecurity.</p>
+            <button class="view-cert-btn" style="border-color:rgba(240,184,0,.4);color:#f0b800" onclick="openLightbox('img/wthiqh.png','Bachelor of Science — University of Tabuk')">
+              <i data-lucide="external-link" style="width:12px;height:12px"></i> View Certificate
+            </button>
+          </div>
+        </div>
         <div class="glass glass-hover cert-img-card reveal" style="border-color:rgba(0,240,255,.2)">
           <div class="cert-img-thumb" onclick="openLightbox('img/IEEECard.png','IEEE Membership Card')">
             <img src="img/IEEECard.png" alt="IEEE Membership Card" loading="lazy">
@@ -1454,7 +1603,7 @@ footer span.hl2{color:var(--purple)}
       </div>
 
       <div class="ach-feature-card reveal reveal-delay-2">
-        <div class="ach-feature-img" onclick="openLightbox('img/LEAP.png','LEAP Tech Exhibition — Riyadh, KSA')">
+        <div class="ach-feature-img" onclick="openLightbox('img/LEAP.png','LEAP Tech Exhibition — Tabuk, KSA')">
           <img src="img/LEAP.png" alt="LEAP Tech Exhibition" loading="lazy">
           <div class="ach-feature-img-overlay">
             <i data-lucide="zoom-in" style="width:18px;height:18px"></i> View Photo
